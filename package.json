@@ -39,9 +39,13 @@
   },
   "author": "ap.ilicheva",
   "browserslist": [
-    "last 2 versions",
-    "IE 11",
-    "Firefox ESR"
+    "last version",
+    "Chrome",
+    "Opera",
+    "Firefox",
+    "Safari",
+    "Edge",
+    "IE 11"
   ],
   "editorconfig-cli": [
     "*.json",
