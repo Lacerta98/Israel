@@ -1,0 +1,28 @@
+{
+  "name": "israel",
+  "version": "1.0.0",
+  "description": "Посадочная страница компании, специализирующейся на учебных программах и стажировках в Израиле.",
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint && eslint source/js/",
+    "build": "gulp build",
+    "start": "gulp start",
+    "webp": "gulp webp",
+    "sprite": "gulp sprite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lacerta98/Israel.git"
+  },
+  "author": "ap.ilicheva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lacerta98/Israel/issues"
+  },
+  "homepage": "https://github.com/Lacerta98/Israel#readme",
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "gulp": "^4.0.2"
+  }
+}
