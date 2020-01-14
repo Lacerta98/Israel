@@ -1,3 +1,57 @@
-h1 {
-  color: red;
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("Fira Sans Bold"),
+    url("files/Fira_Sans_Bold.woff") format("woff");
+}
+html, body {
+  width: 100%;
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.main-header {
+  height: 879px;
+  background-image: url('img/bg.jpg');
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  margin: 32px 100px 0 100px;
+  align-items: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #484848;
+}
+
+nav div {
+  flex: auto;
+}
+
+.button__callOrder__container {
+  flex: 1;
+  text-align: right;
+}
+
+.button__phone__container {
+  flex: 1;
+}
+
+.header__logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button__callOrder {
+  border-bottom: 2px dashed #484848;
+  font-size: 12px;
+}
+
+.button__phone {
+  text-decoration: none;
+  font-size: 15px;
+  color: #484848;
 }
