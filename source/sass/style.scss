@@ -4,22 +4,46 @@
   font-weight: 700;
   src:
     local("Fira Sans Bold"),
-    url("files/Fira_Sans_Bold.woff") format("woff");
+    url("../../files/Fira_Sans_Bold.woff") format("woff");
 }
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("Raleway Regular"),
+    url("../../files/Raleway-Black.woff") format("woff");
+}
+
 html, body {
   width: 100%;
+  margin: 0;
   font-family: 'Fira Sans', sans-serif;
 }
 
 .main-header {
   height: 879px;
-  background-image: url('img/bg.jpg');
+  background-image: url("../../img/photo_girl.png"), url("../../img/bg.png");
+  background-position: calc(50% + 31px) calc(50% - 8px), left -32px;
+  background-repeat: no-repeat;
+}
+
+.main-header__caption {
+  text-transform: uppercase;
+  font-size: 200px;
+  background-image: url("../../img/Pic_overlay.jpg");
+  background-clip: text;
+  color: rgba(0,0,0,0);
+  background-repeat: no-repeat;
   background-position: center;
+  font-family: Raleway, sans-serif;
+  letter-spacing: 0.05em;
+  z-index: 0;
 }
 
 nav {
   display: flex;
-  margin: 32px 100px 0 100px;
+  margin: 32px 100px 0 110px;
   align-items: center;
   font-weight: bold;
   text-transform: uppercase;
