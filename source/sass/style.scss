@@ -7,12 +7,19 @@
     url("../../files/Fira_Sans_Bold.woff") format("woff");
 }
 @font-face {
-  font-family: "Raleway";
+  font-family: "Fira Sans";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   src:
-    local("Raleway Regular"),
-    url("../../files/Raleway-Black.woff") format("woff");
+    local("Fira Sans Regular"),
+    url("../../files/FiraSans.woff") format("woff");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  src:
+    local("Montserrat Medium"),
+    url("../../files/Montserrat-Medium.woff") format("woff");
 }
 
 html, body {
@@ -22,30 +29,157 @@ html, body {
 }
 
 .main-header {
-  height: 879px;
-  background-image: url("../../img/photo_girl.png"), url("../../img/bg.png");
-  background-position: calc(50% + 31px) calc(50% - 8px), left -32px;
+  height: 100vh;
+  background-image: url("../../img/girl.png"), url("../../img/Israel.png"), url("../../img/bg.png");
+  background-size: auto, 75%, cover;
+  background-position: center, center 28%, center;
   background-repeat: no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0);
+  text-align: center;
+  font-weight: bold;
 }
 
-.main-header__caption {
-  text-transform: uppercase;
-  font-size: 200px;
-  background-image: url("../../img/Pic_overlay.jpg");
-  background-clip: text;
-  color: rgba(0,0,0,0);
-  background-repeat: no-repeat;
+.text_promo {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 32px;
+  margin-top: 458px;
+  letter-spacing: -0.02em;
+}
+
+.information__container {
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.information {
+  width: 52%;
+  margin: 24px auto auto auto;
+  line-height: 1.8;
+}
+
+.information__video__container {
+  background: url("../../img/watercolor_Bg.png") center no-repeat;
+  background-size: 100%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.information__video {
+  mask: url("../../img/mask_video.png") top left / cover;
+  margin: 48px auto 68px auto;
+  width: 870px;
+}
+
+.button__play {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 96px;
+  height: 96px;
+  background: url("../../img/play_button.svg") center no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+.programs_container {
+  background: url("../../img/bg_program.png") center no-repeat;
+  background-size: contain;
+  margin-top: 80px;
+}
+
+.programs {
+  padding-top: 48px;
+  width: 945px;
+  margin: auto;
+}
+
+.programs_flex_container {
+  display: flex;
+  margin: 52px 100px 0 0;
+}
+
+.programs_list {
+  font-size: 15px;
+  list-style: none;
+  flex: 55px;
+  padding: 0;
+}
+
+.program_description {
+  line-height: 1.5em;
+  letter-spacing: -0.03em;
+}
+
+.program_container {
+  flex: 3;
+  padding-left: 55px;
+}
+
+.program_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+
+.program_icon {
   background-position: center;
-  font-family: Raleway, sans-serif;
-  letter-spacing: 0.05em;
-  z-index: 0;
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+  flex: 1;
+}
+
+.program_title {
+  flex: 2;
+}
+
+.program_icon-culture {
+  background-image: url("../../img/culture_default.svg");
+}
+
+.program_icon-study {
+  background-image: url("../../img/study_default.svg");
+}
+
+.program_icon-business {
+  background-image: url("../../img/busines_default.svg");
+}
+
+.program_icon-volonteur {
+  background-image: url("../../img/voloneur_default.svg");
+}
+
+.program_icon-religion {
+  background-image: url("../../img/religion_default.svg");
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #1FC0FC;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  color: #1FC0FC;
 }
 
 nav {
   display: flex;
-  margin: 32px 100px 0 110px;
+  margin: 32px 110px 0 110px;
   align-items: center;
-  font-weight: bold;
   text-transform: uppercase;
   color: #484848;
 }
@@ -61,6 +195,7 @@ nav div {
 
 .button__phone__container {
   flex: 1;
+  text-align: left;
 }
 
 .header__logo {
