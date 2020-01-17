@@ -83,9 +83,20 @@ html, body {
   margin: auto;
   width: 96px;
   height: 96px;
-  background: url("../../img/play_button.svg") center no-repeat;
+  background-color: rgba(0,0,0,0);
+  background-image: url("../../img/play_button.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: contain;
   border: none;
+}
+
+.button__play:hover {
+  background-image: url("../../img/play_button_hover.svg");
+}
+
+.button__play:active {
+  background-image: url("../../img/play_button_active.svg");
 }
 
 .programs_container {
