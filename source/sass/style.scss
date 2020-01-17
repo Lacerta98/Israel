@@ -31,7 +31,7 @@ html, body {
 .main-header {
   height: 100vh;
   background-image: url("../../img/girl.png"), url("../../img/Israel.png"), url("../../img/bg.png");
-  background-size: auto, 75%, cover;
+  background-size: cover, 75%, cover;
   background-position: center, center 28%, center;
   background-repeat: no-repeat;
   border: 1px solid rgba(0, 0, 0, 0);
@@ -52,6 +52,8 @@ html, body {
   font-family: "Fira Sans", sans-serif;
   font-size: 17px;
   font-weight: 400;
+  background: url("../../img/watercolor_Bg.png") center bottom no-repeat;
+  background-size: contain;
 }
 
 .information {
@@ -61,8 +63,6 @@ html, body {
 }
 
 .information__video__container {
-  background: url("../../img/watercolor_Bg.png") center no-repeat;
-  background-size: 100%;
   position: relative;
   width: 100%;
   overflow: hidden;
