@@ -121,6 +121,7 @@ html, body {
   list-style: none;
   flex: 55px;
   padding: 0;
+  margin: 15px 0;
 }
 
 .program_description {
@@ -140,6 +141,59 @@ html, body {
   height: 70px;
 }
 
+.program_button:hover {
+  background: linear-gradient(to bottom right, #FFC341, #FFD701);
+  background-clip: text;
+  color: transparent;
+}
+
+.program_button:hover > .program_icon-culture {
+  background-image: url("../../img/culture_hover.svg");
+}
+
+.program_button:hover > .program_icon-business {
+  background-image: url("../../img/busines_hover.svg");
+}
+
+.program_button:hover > .program_icon-volonteur {
+  background-image: url("../../img/valenturs_hover.svg");
+}
+
+.program_button:hover > .program_icon-religion {
+  background-image: url("../../img/religion_hover.svg");
+}
+
+.program_button:hover > .program_icon-study {
+  background-image: url("../../img/study_hover.svg");
+}
+
+.program_button:focus {
+  background: linear-gradient(to bottom right, #FFC341, #FFD701);
+  color: white;
+  outline: none;
+  clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+}
+
+.program_button:focus > .program_icon-study {
+  background-image: url("../../img/study_focus.svg");
+}
+
+.program_button:focus > .program_icon-religion {
+  background-image: url("../../img/relidion_focus.svg");
+}
+
+.program_button:focus > .program_icon-business {
+  background-image: url("../../img/busines_focus.svg");
+}
+
+.program_button:focus > .program_icon-culture {
+  background-image: url("../../img/culture_focus.svg");
+}
+
+.program_button:focus > .program_icon-volonteur {
+  background-image: url("../../img/volonteur_focus.svg");
+}
+
 .program_icon {
   background-position: center;
   background-repeat: no-repeat;
@@ -156,20 +210,40 @@ html, body {
   background-image: url("../../img/culture_default.svg");
 }
 
+.program_icon-culture:hover {
+  background-image: url("../../img/culture_hover.svg");
+}
+
 .program_icon-study {
   background-image: url("../../img/study_default.svg");
+}
+
+.program_icon-culture:hover {
+  background-image: url("../../img/study_hover.svg");
 }
 
 .program_icon-business {
   background-image: url("../../img/busines_default.svg");
 }
 
+.program_icon-culture:focus {
+  background-image: url("../../img/busines_hover.svg");
+}
+
 .program_icon-volonteur {
+  background-image: url("../../img/voloneur_default.svg");
+}
+
+.program_icon-culture:focus {
   background-image: url("../../img/voloneur_default.svg");
 }
 
 .program_icon-religion {
   background-image: url("../../img/religion_default.svg");
+}
+
+.program_icon-culture:focus {
+  background-image: url("../../img/religion_hover.svg");
 }
 
 h2 {
