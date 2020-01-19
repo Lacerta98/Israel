@@ -56,9 +56,12 @@ html, body {
   background-size: 100% 80%;
 }
 
+.information, .record_description {
+  margin: 24px auto auto auto;
+}
+
 .information {
   width: 52%;
-  margin: 24px auto auto auto;
   line-height: 1.8;
 }
 
@@ -210,31 +213,15 @@ html, body {
   background-image: url("../../img/culture_default.svg");
 }
 
-.program_icon-culture:hover {
-  background-image: url("../../img/culture_hover.svg");
-}
-
 .program_icon-study {
   background-image: url("../../img/study_default.svg");
-}
-
-.program_icon-culture:hover {
-  background-image: url("../../img/study_hover.svg");
 }
 
 .program_icon-business {
   background-image: url("../../img/busines_default.svg");
 }
 
-.program_icon-culture:focus {
-  background-image: url("../../img/busines_hover.svg");
-}
-
 .program_icon-volonteur {
-  background-image: url("../../img/voloneur_default.svg");
-}
-
-.program_icon-culture:focus {
   background-image: url("../../img/voloneur_default.svg");
 }
 
@@ -242,8 +229,68 @@ html, body {
   background-image: url("../../img/religion_default.svg");
 }
 
-.program_icon-culture:focus {
-  background-image: url("../../img/religion_hover.svg");
+.record_container {
+  background-image: url("../../img/backpack.png"), url("../../img/girl-flag-bg.png");
+  background-position: left center, right top;
+  background-repeat: no-repeat;
+  background-size: 147px 262px, auto;
+  height: 100vh;
+  border: 1px solid rgba(0,0,0,0);
+}
+
+.record_container_center {
+  width: 477px;
+  height: 254px;
+  margin: calc((100vh - 254px)/2) auto auto 210px;
+}
+
+.record_form {
+  border-radius: 80px;
+  width: 477px;
+  height: 59px;
+  border: 1px solid #E3E3E3;
+  margin-top: 64px;
+}
+
+input {
+  font-family: "Fira Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 17px;
+}
+
+#phone {
+  padding: 0;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  width: 250px;
+  vertical-align: middle;
+}
+
+#phone::placeholder {
+  padding-left: 40px;
+}
+
+input[type="submit"] {
+  width: 216px;
+  height: 59px;
+  border: none;
+  border-radius: 80px;
+  background: linear-gradient(to bottom right, #FFC341, #FFD701);
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background: #ffd701;
+}
+
+input[type="submit"]:active {
+  background: #ffd701;
+  box-shadow: inset 2px 2px 5px #FFC341;
+}
+
+label {
+  display: none;
 }
 
 h2 {
