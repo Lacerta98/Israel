@@ -1,0 +1,31 @@
+$black-color: #484848;
+$blue-color: #1fc0fc;
+$orange-color: #ffc341;
+$yellow-color: #ffd701;
+$white-color: #ffffff;
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("Fira Sans Bold"),
+    url("../fonts/Fira_Sans_Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Fira Sans Regular"),
+    url("../fonts/FiraSans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  src:
+    local("Montserrat Medium"),
+    url("../fonts/Montserrat-Medium.woff") format("woff");
+}

@@ -1,0 +1,83 @@
+.conditions-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url("../img/conditions-bg.png"), url("../img/stamp.png");
+  background-repeat: no-repeat;
+  background-size: cover, auto;
+  background-position: center top, right center;
+  height: 100vh;
+  padding: 0 0 0 12px;
+}
+
+.conditions-photo {
+  flex: 1;
+  background: url("../img/conditions-photo.jpg") no-repeat center center;
+  background-size: contain;
+  mask: url("../img/conditions-photo-mask.png") center center / contain;
+  height: 707px;
+  margin-right: 90px;
+}
+
+.conditions-container-flex {
+  flex: 1;
+  color: $black-color;
+  height: 707px;
+  padding: 31px 131px 0 0;
+}
+
+.conditions-description {
+  margin: 24px 0 32px 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+ol.conditions-list {
+  margin-top: 24px;
+  margin-bottom: 48px;
+  display: block;
+  counter-reset: wslist1;
+  list-style: none;
+}
+
+ol.conditions-list > li {
+  position: relative;
+  padding-left: 42px;
+  padding-bottom: 39px;
+  border-left: 1px dashed rgba(72, 72, 72, 0.2);
+  height: 42px;
+}
+
+ol.conditions-list > li::after {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+  background: $white-color;
+  border-radius: 50%;
+  color: $orange-color;
+  content: counter(wslist1);
+  counter-increment: wslist1;
+  display: inline-block;
+  height: 36px;
+  left: -19px;
+  line-height: 36px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 36px;
+}
+
+ol.conditions-list > li:last-child {
+  padding-bottom: 0;
+  border: 0;
+}
+
+.conditions-i {
+  margin-left: 16px;
+  border-left: 4px solid $orange-color;
+  padding-left: 16px;
+  font-size: 15px;
+}
+
+.conditions-i > i {
+  font-style: normal;
+  opacity: 0.5;
+}

@@ -1,0 +1,55 @@
+.information-container {
+  text-align: center;
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  background: url("../img/watercolor-bg.png") center bottom no-repeat;
+  background-size: 100% 80%;
+}
+
+.information,
+.record-description {
+  margin: 24px auto auto auto;
+}
+
+.information {
+  width: 52%;
+  line-height: 1.8;
+}
+
+.information-video-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.information-video {
+  mask: url("../img/mask-video.png") top left / cover;
+  margin: 48px auto 68px auto;
+  width: 870px;
+}
+
+.button-play {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 96px;
+  height: 96px;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url("../img/play-button.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+}
+
+.button-play:hover {
+  background-image: url("../img/play-button-hover.svg");
+}
+
+.button-play:active {
+  background-image: url("../img/play-button-active.svg");
+}

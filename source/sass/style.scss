@@ -1,36 +1,29 @@
-@font-face {
-  font-family: "Fira Sans";
-  font-style: normal;
-  font-weight: 700;
-  src:
-    local("Fira Sans Bold"),
-    url("../../files/Fira_Sans_Bold.woff") format("woff");
-}
-@font-face {
-  font-family: "Fira Sans";
-  font-style: normal;
-  font-weight: 400;
-  src:
-    local("Fira Sans Regular"),
-    url("../../files/FiraSans.woff") format("woff");
-}
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  src:
-    local("Montserrat Medium"),
-    url("../../files/Montserrat-Medium.woff") format("woff");
-}
+@import "blocks/constants";
+@import "blocks/informations";
+@import "blocks/programs";
+@import "blocks/record";
+@import "blocks/conditions";
+@import "blocks/life-israel";
+@import "blocks/masaisrael";
 
-html, body {
+html,
+body {
   width: 100%;
   margin: 0;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", "Arial", sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .main-header {
   height: 100vh;
-  background-image: url("../../img/girl.png"), url("../../img/Israel.png"), url("../../img/bg.png");
+  background-image: url("../img/girl.png"), url("../img/Israel.png"), url("../img/bg.png");
   background-size: cover, 75%, cover;
   background-position: center, center 28%, center;
   background-repeat: no-repeat;
@@ -39,445 +32,67 @@ html, body {
   font-weight: bold;
 }
 
-.text_promo {
+.text-promo {
   font-size: 24px;
-  color: white;
+  color: $white-color;
   margin-bottom: 32px;
   margin-top: 458px;
   letter-spacing: -0.02em;
 }
 
-.information__container {
-  text-align: center;
-  font-family: "Fira Sans", sans-serif;
-  font-size: 17px;
-  font-weight: 400;
-  background: url("../../img/watercolor_Bg.png") center bottom no-repeat;
-  background-size: 100% 80%;
-}
-
-.information, .record_description {
-  margin: 24px auto auto auto;
-}
-
-.information {
-  width: 52%;
-  line-height: 1.8;
-}
-
-.information__video__container {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-
-.information__video {
-  mask: url("../../img/mask_video.png") top left / cover;
-  margin: 48px auto 68px auto;
-  width: 870px;
-}
-
-.button__play {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 96px;
-  height: 96px;
-  background-color: rgba(0,0,0,0);
-  background-image: url("../../img/play_button.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: none;
-}
-
-.button__play:hover {
-  background-image: url("../../img/play_button_hover.svg");
-}
-
-.button__play:active {
-  background-image: url("../../img/play_button_active.svg");
-}
-
-.programs_container {
-  background: url("../../img/bg_program.png") right center no-repeat;
-  background-size: contain;
-  margin-top: 80px;
-}
-
-.programs {
-  padding-top: 48px;
-  width: 945px;
-  margin: auto;
-}
-
-.programs_flex_container {
-  display: flex;
-  margin: 52px 100px 0 0;
-}
-
-.programs_list {
-  font-size: 15px;
-  list-style: none;
-  flex: 55px;
-  padding: 0;
-  margin: 15px 0;
-}
-
-.program_description {
-  line-height: 1.5em;
-  letter-spacing: -0.03em;
-}
-
-.program_container {
-  flex: 3;
-  padding-left: 55px;
-}
-
-.program_button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70px;
-}
-
-.program_button:hover {
-  background: linear-gradient(to bottom right, #FFC341, #FFD701);
-  background-clip: text;
-  color: transparent;
-}
-
-.program_button:hover > .program_icon-culture {
-  background-image: url("../../img/culture_hover.svg");
-}
-
-.program_button:hover > .program_icon-business {
-  background-image: url("../../img/busines_hover.svg");
-}
-
-.program_button:hover > .program_icon-volonteur {
-  background-image: url("../../img/valenturs_hover.svg");
-}
-
-.program_button:hover > .program_icon-religion {
-  background-image: url("../../img/religion_hover.svg");
-}
-
-.program_button:hover > .program_icon-study {
-  background-image: url("../../img/study_hover.svg");
-}
-
-.program_button:focus {
-  background: linear-gradient(to bottom right, #FFC341, #FFD701);
-  color: white;
-  outline: none;
-  clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
-}
-
-.program_button:focus > .program_icon-study {
-  background-image: url("../../img/study_focus.svg");
-}
-
-.program_button:focus > .program_icon-religion {
-  background-image: url("../../img/relidion_focus.svg");
-}
-
-.program_button:focus > .program_icon-business {
-  background-image: url("../../img/busines_focus.svg");
-}
-
-.program_button:focus > .program_icon-culture {
-  background-image: url("../../img/culture_focus.svg");
-}
-
-.program_button:focus > .program_icon-volonteur {
-  background-image: url("../../img/volonteur_focus.svg");
-}
-
-.program_icon {
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 36px;
-  height: 36px;
-  flex: 1;
-}
-
-.program_title {
-  flex: 2;
-}
-
-.program_icon-culture {
-  background-image: url("../../img/culture_default.svg");
-}
-
-.program_icon-study {
-  background-image: url("../../img/study_default.svg");
-}
-
-.program_icon-business {
-  background-image: url("../../img/busines_default.svg");
-}
-
-.program_icon-volonteur {
-  background-image: url("../../img/voloneur_default.svg");
-}
-
-.program_icon-religion {
-  background-image: url("../../img/religion_default.svg");
-}
-
-.record_container {
-  background-image: url("../../img/backpack.png"), url("../../img/girl-flag-bg.png");
-  background-position: left center, right top;
-  background-repeat: no-repeat;
-  background-size: 147px 262px, auto;
-  height: 100vh;
-  border: 1px solid rgba(0,0,0,0);
-}
-
-.record_container_center {
-  width: 477px;
-  height: 254px;
-  margin: calc((100vh - 254px)/2) auto auto 210px;
-}
-
-.record_form {
-  border-radius: 80px;
-  width: 477px;
-  height: 59px;
-  border: 1px solid #E3E3E3;
-  margin-top: 64px;
-}
-
 input {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 17px;
 }
 
-#phone, .see_photo {
+#phone,
+.see-photo {
   padding: 0 0 0 40px;
   border: none;
   outline: none;
-  -webkit-appearance: none;
+  appearance: none;
   width: 216px;
   vertical-align: middle;
 }
 
-input[type="submit"], .see_photo {
+input[type="submit"],
+.see-photo {
   width: 216px;
   height: 59px;
   border: none;
   border-radius: 80px;
-  background: linear-gradient(to bottom right, #FFC341, #FFD701);
-  color: white;
+  background: linear-gradient(to bottom right, $orange-color, $yellow-color);
+  color: $white-color;
 }
 
-input[type="submit"]:hover, .see_photo:hover {
-  background: #ffd701;
+input[type="submit"]:hover,
+.see-photo:hover {
+  background: $yellow-color;
 }
 
-input[type="submit"]:active, .see_photo:active{
-  background: #ffd701;
-  box-shadow: inset 2px 2px 5px #FFC341;
-}
-
-.conditions_container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  background-image: url("../../img/conditions_bg.png"), url("../../img/stamp.png");
-  background-repeat: no-repeat;
-  background-size: cover, auto;
-  background-position: center top, right center;
-  height: 100vh;
-  padding: 0 0 0 12px;
-}
-
-.conditions_photo {
-  flex: 1;
-  background: url("../../img/conditions_photo.jpg") no-repeat center center;
-  background-size: contain;
-  mask: url("../../img/conditions_photo_mask.png") center center / contain;
-  height: 707px;
-  margin-right: 90px;
-}
-
-.conditions_container_flex {
-  flex: 1;
-  color: #484848;
-  height: 707px;
-  padding: 31px 131px 0 0;
-}
-
-.conditions_description {
-  margin: 24px 0 32px 0;
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-ol  {
-  margin-top: 24px;
-  margin-bottom: 48px;
-  display: block;
-  counter-reset: wslist1;
-  list-style: none;
-}
-ol > li {
-  position:relative;
-  padding-left: 42px;
-  padding-bottom: 39px;
-  border-left: 1px dashed rgba(72,72,72, 0.2);
-  height: 42px;
-}
-ol > li::after {
-  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
-  background: white;
-  border-radius: 50%;
-  color: #FFC341;
-  content: counter(wslist1);
-  counter-increment: wslist1;
-  display: inline-block;
-  height: 36px;
-  left: -19px;
-  line-height: 36px;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  width: 36px;
-}
-
-ol > li:last-child {
-  padding-bottom: 0;
-  border: 0;
-}
-
-.conditions_i {
-  margin-left: 16px;
-  border-left: 4px solid #FFC341;
-  padding-left: 16px;
-  font-size: 15px;
-}
-
-.conditions_i > i {
-  font-style: normal;
-  opacity: 0.5;
-}
-
-.lifeIsrael_container {
-  background: url("../../img/life_Bg.png") center no-repeat;
-  background-size: cover;
-  height: 100vh;
-  text-align: center;
-}
-
-.lifeIsrael_description {
-  width: 720px;
-  font-size: 17px;
-  margin: 24px auto 46px auto;
+input[type="submit"]:active,
+.see-photo:active {
+  background: $yellow-color;
+  box-shadow: inset 2px 2px 5px $orange-color;
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 40px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #1FC0FC;
+  color: $blue-color;
   margin: 0;
 }
 
 h3 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   font-size: 28px;
-  color: #1FC0FC;
+  color: $blue-color;
 }
 
-.lifeIsrael_content {
-  display: grid;
-  grid-template-areas:
-    "first first second third third"
-    "first first fours fours fifth";
-  grid-template-rows: repeat(2, 318px);
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 30px;
-  margin: 0 113px 0 104px;
-  padding: 0;
-}
-
-.lifeIsrael_content > li {
-  list-style: none;
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-align: left;
-}
-
-.lifeIsrael_content > li > h3 {
-  margin-top: 236px;
-  font-size: 21px;
-  font-family: "Raleway", sans-serif;
-  color: white;
-  margin-left: 24px;
-  margin-right: 19px;
-}
-
-.lifeIsrael_content > li:first-child > h3 {
-  margin-top: 584px;
-  font-size: 21px;
-  font-family: "Raleway", sans-serif;
-  color: white;
-}
-
-.lifeIsrael_first {
-  grid-area: first;
-  background-image: url("../../img/1img.png");
-}
-
-.lifeIsrael_second {
-  grid-area: second;
-  background-image: url("../../img/2img.png");
-}
-
-.lifeIsrael_third {
-  grid-area: third;
-  background-image: url("../../img/3img.png");
-}
-
-.lifeIsrael_fours {
-  grid-area: fours;
-  background-image: url("../../img/4img.png");
-}
-
-.lifeIsrael_fifth {
-  grid-area: fifth;
-  background-image: url("../../img/5img.png");
-}
-
-.MASAISRAEL_container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background: url("../../img/MASAISRAEL_bg.png") left top no-repeat;
-  background-size: cover;
-  height: 100vh;
-}
-
-.MASAISRAEL_content {
-  margin-right: 167px;
-  width: 403px;
-  height: 160px;
-  color: white;
-}
-
-.MASAISRAEL_description {
-  line-height: 1.7;
-  font-size: 17px;
-  margin: 24px 0 46px 0;
-}
-
-.see_photo {
+.see-photo {
   width: 230px;
   text-transform: uppercase;
   display: flex;
@@ -486,7 +101,7 @@ h3 {
   padding: 0;
 }
 
-.see_photo > img {
+.see-photo > img {
   margin-right: 8px;
 }
 
@@ -499,36 +114,36 @@ nav {
   margin: 32px 110px 0 110px;
   align-items: center;
   text-transform: uppercase;
-  color: #484848;
+  color: $black-color;
 }
 
 nav div {
   flex: auto;
 }
 
-.button__callOrder__container {
+.button-callOrder-container {
   flex: 1;
   text-align: right;
 }
 
-.button__phone__container {
+.button-phone-container {
   flex: 1;
   text-align: left;
 }
 
-.header__logo {
+.header-logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.button__callOrder {
-  border-bottom: 2px dashed #484848;
+.button-callOrder {
+  border-bottom: $black-color;
   font-size: 12px;
 }
 
-.button__phone {
+.button-phone {
   text-decoration: none;
   font-size: 15px;
-  color: #484848;
+  color: $black-color;
 }

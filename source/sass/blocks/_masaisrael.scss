@@ -1,0 +1,21 @@
+.MASAISRAEL-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: url("../img/masaisrael-bg.png") left top no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.MASAISRAEL-content {
+  margin-right: 167px;
+  width: 403px;
+  height: 160px;
+  color: $white-color;
+}
+
+.MASAISRAEL-description {
+  line-height: 1.7;
+  font-size: 17px;
+  margin: 24px 0 46px 0;
+}

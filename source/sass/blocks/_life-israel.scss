@@ -1,0 +1,72 @@
+.lifeIsrael-container {
+  background: url("../img/life-bg.png") center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+
+.lifeIsrael-description {
+  width: 720px;
+  font-size: 17px;
+  margin: 24px auto 46px auto;
+}
+
+.lifeIsrael-content {
+  display: grid;
+  grid-template-areas:
+    "first first second third third"
+    "first first fours fours fifth";
+  grid-template-rows: repeat(2, 318px);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+  margin: 0 113px 0 104px;
+  padding: 0;
+}
+
+.lifeIsrael-content > li {
+  list-style: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: left;
+}
+
+.lifeIsrael-content > li > h3 {
+  margin-top: 236px;
+  font-size: 21px;
+  font-family: "Raleway", "Arial", sans-serif;
+  color: $white-color;
+  margin-left: 24px;
+  margin-right: 19px;
+}
+
+.lifeIsrael-content > li:first-child > h3 {
+  margin-top: 584px;
+  font-size: 21px;
+  font-family: "Raleway", "Arial", sans-serif;
+  color: $white-color;
+}
+
+.lifeIsrael-first {
+  grid-area: first;
+  background-image: url("../img/1img.png");
+}
+
+.lifeIsrael-second {
+  grid-area: second;
+  background-image: url("../img/2img.png");
+}
+
+.lifeIsrael-third {
+  grid-area: third;
+  background-image: url("../img/3img.png");
+}
+
+.lifeIsrael-fours {
+  grid-area: fours;
+  background-image: url("../img/4img.png");
+}
+
+.lifeIsrael-fifth {
+  grid-area: fifth;
+  background-image: url("../img/5img.png");
+}
