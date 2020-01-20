@@ -259,16 +259,12 @@ input {
 }
 
 #phone {
-  padding: 0;
+  padding: 0 0 0 40px;
   border: none;
   outline: none;
   -webkit-appearance: none;
-  width: 256px;
+  width: 216px;
   vertical-align: middle;
-}
-
-#phone::placeholder {
-  padding-left: 40px;
 }
 
 input[type="submit"] {
@@ -287,6 +283,88 @@ input[type="submit"]:hover {
 input[type="submit"]:active {
   background: #ffd701;
   box-shadow: inset 2px 2px 5px #FFC341;
+}
+
+.conditions_container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-image: url("../../img/conditions_bg.png"), url("../../img/stamp.png");
+  background-repeat: no-repeat;
+  background-size: cover, auto;
+  background-position: center top, right center;
+  height: 100vh;
+  padding: 0 0 0 12px;
+}
+
+.conditions_photo {
+  flex: 1;
+  background: url("../../img/conditions_photo.jpg") no-repeat center center;
+  background-size: contain;
+  mask: url("../../img/conditions_photo_mask.png") center center / contain;
+  height: 707px;
+  margin-right: 90px;
+}
+
+.conditions_container_flex {
+  flex: 1;
+  color: #484848;
+  height: 707px;
+  padding: 31px 131px 0 0;
+}
+
+.conditions_description {
+  margin: 24px 0 32px 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+ol  {
+  margin-top: 24px;
+  margin-bottom: 48px;
+  display: block;
+  counter-reset: wslist1;
+  list-style: none;
+}
+ol > li {
+  position:relative;
+  padding-left: 42px;
+  padding-bottom: 39px;
+  border-left: 1px dashed rgba(72,72,72, 0.2);
+  height: 42px;
+}
+ol > li::after {
+  box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+  background: white;
+  border-radius: 50%;
+  color: #FFC341;
+  content: counter(wslist1);
+  counter-increment: wslist1;
+  display: inline-block;
+  height: 36px;
+  left: -19px;
+  line-height: 36px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 36px;
+}
+
+ol > li:last-child {
+  padding-bottom: 0;
+  border: 0;
+}
+
+.conditions_i {
+  margin-left: 16px;
+  border-left: 4px solid #FFC341;
+  padding-left: 16px;
+  font-size: 15px;
+}
+
+.conditions_i > i {
+  font-style: normal;
+  opacity: 0.5;
 }
 
 label {
