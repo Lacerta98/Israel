@@ -258,7 +258,7 @@ input {
   font-size: 17px;
 }
 
-#phone {
+#phone, .see_photo {
   padding: 0 0 0 40px;
   border: none;
   outline: none;
@@ -267,7 +267,7 @@ input {
   vertical-align: middle;
 }
 
-input[type="submit"] {
+input[type="submit"], .see_photo {
   width: 216px;
   height: 59px;
   border: none;
@@ -276,11 +276,11 @@ input[type="submit"] {
   color: white;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, .see_photo:hover {
   background: #ffd701;
 }
 
-input[type="submit"]:active {
+input[type="submit"]:active, .see_photo:active{
   background: #ffd701;
   box-shadow: inset 2px 2px 5px #FFC341;
 }
@@ -455,11 +455,44 @@ h3 {
   background-image: url("../../img/5img.png");
 }
 
+.MASAISRAEL_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: url("../../img/MASAISRAEL_bg.png") left top no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.MASAISRAEL_content {
+  margin-right: 167px;
+  width: 403px;
+  height: 160px;
+  color: white;
+}
+
+.MASAISRAEL_description {
+  line-height: 1.7;
+  font-size: 17px;
+  margin: 24px 0 46px 0;
+}
+
+.see_photo {
+  width: 230px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.see_photo > img {
+  margin-right: 8px;
+}
+
 label {
   display: none;
 }
-
-
 
 nav {
   display: flex;
