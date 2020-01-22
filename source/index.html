@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
-<header class="main-header">
+<header class="page main-header">
   <h1 class="visually-hidden">Проект Израиль</h1>
   <nav>
     <div class="button-phone-container">
@@ -37,8 +37,8 @@
 </header>
 
 <main>
-  <section class="information-container">
-    <h2>О программе</h2>
+  <section class="page information-container">
+    <h2 class="information-caption">О программе</h2>
     <p class="information">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут.
       Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле.<br/>
       В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
@@ -48,7 +48,7 @@
     </div>
   </section>
 
-  <section class="programs-container">
+  <section class="page programs-container">
     <div class="programs">
       <h2>Программы</h2>
       <div class="programs-flex-container">
@@ -135,7 +135,7 @@
       </ul>-->
     </div>
   </section>
-  <section class="record-container">
+  <section class="page record-container">
     <div class="record-container-center">
       <h2>Хочу поехать!</h2>
       <p class="record-description">Оставьте свой телефон и мы свяжемся с вами, <br/>
@@ -149,7 +149,7 @@
       </form>
     </div>
   </section>
-  <section class="conditions-container">
+  <section class="page conditions-container">
     <div class="conditions-photo"></div>
     <div class="conditions-container-flex">
       <h2>Как поехать</h2>
@@ -168,7 +168,7 @@
       </div>
     </div>
   </section>
-  <section class="life-israel-container">
+  <section class="page life-israel-container">
     <h2>Жизнь в Израиле</h2>
     <p class="life-israel-description">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
     <ul class="life-israel-content">
@@ -189,61 +189,109 @@
       </li>
     </ul>
   </section>
-  <section class="masaisrael-container">
+  <section class="page masaisrael-container">
     <div class="masaisrael-content">
       <h2>#MASAISRAEL</h2>
       <p class="masaisrael-description">Познакомьтесь с программой от первого лица! Многие участники ведут блоги и фотодневники о жизни, учёбе и путешествиях в Израиле.</p>
       <a>
         <div class="see-photo">
-          <img src="img/instagram-button.svg" alt="Инстаграм" width="24px" height="24px">
+          <img src="img/instagram-button.svg" alt="Инстаграм" width="24" height="24">
           <p>Смотреть фото</p>
         </div>
       </a>
     </div>
   </section>
-  <section class="ask-container">
-
-    <h2>Частые вопросы</h2>
-    <ol class="asks-list">
-      <li>
-        Кто организатор? Какие сроки у программы?
-      </li>
-      <li>
-        Что такое грант на обучение?
-      </li>
-      <li>
-        Как определяется стоимость программы?
-        <i>
-          Полная стоимость определяется организаторами в зависимости от направления.
-          В большинстве случаев грант «Маса» не покрывает полную стоимость программы,
-          и поэтому предусматривается определённая доля личного участия.
-        </i>
-      </li>
-      <li>
-        Что такое грант на обучение?
-      </li>
-      <li>
-        Признаётся ли учеба в рамках проекта для дальнейшего обучения?
-      </li>
-      <li>
-        Как выглдядит полный процесс регистрации на программу «Маса»?
-      </li>
-    </ol>
+  <section class="page ask-container">
+    <div class="ask-content">
+      <h2>Частые вопросы</h2>
+      <ol class="asks-list">
+        <li>
+          <p class="ask">Кто организатор? Какие сроки у программы?</p>
+          <button type="button" class="ask-list-button ask-list-button-close"></button>
+          <p class="hidden answer">
+            Полная стоимость определяется организаторами в зависимости от направления.
+            В большинстве случаев грант «Маса» не покрывает полную стоимость программы,
+            и поэтому предусматривается определённая доля личного участия.
+          </p>
+        </li>
+        <li>
+          <p class="ask">Что такое грант на обучение?</p>
+          <button type="button" class="ask-list-button ask-list-button-close"></button>
+          <p class="hidden answer">
+            Полная стоимость определяется организаторами в зависимости от направления.
+            В большинстве случаев грант «Маса» не покрывает полную стоимость программы,
+            и поэтому предусматривается определённая доля личного участия.
+          </p>
+        </li>
+        <li>
+          <p class="ask">Как определяется стоимость программы?</p>
+          <button type="button" class="ask-list-button ask-list-button-close"></button>
+          <p class="hidden answer">
+            Полная стоимость определяется организаторами в зависимости от направления.
+            В большинстве случаев грант «Маса» не покрывает полную стоимость программы,
+            и поэтому предусматривается определённая доля личного участия.
+          </p>
+        </li>
+        <li>
+          <p class="ask">Что такое грант на обучение?</p>
+          <button type="button" class="ask-list-button ask-list-button-close"></button>
+          <p class="hidden answer">
+            Полная стоимость определяется организаторами в зависимости от направления.
+            В большинстве случаев грант «Маса» не покрывает полную стоимость программы,
+            и поэтому предусматривается определённая доля личного участия.
+          </p>
+        </li>
+        <li>
+          <p class="ask">Признаётся ли учеба в рамках проекта для дальнейшего обучения?</p>
+          <button type="button" class="ask-list-button ask-list-button-close"></button>
+          <p class="hidden answer">
+            Полная стоимость определяется организаторами в зависимости от направления.
+            В большинстве случаев грант «Маса» не покрывает полную стоимость программы,
+            и поэтому предусматривается определённая доля личного участия.
+          </p>
+        </li>
+        <li>
+          <p class="ask">Как выглдядит полный процесс регистрации на программу «Маса»?</p>
+          <button type="button" class="ask-list-button ask-list-button-close"></button>
+          <p class="hidden answer">
+            Полная стоимость определяется организаторами в зависимости от направления.
+            В большинстве случаев грант «Маса» не покрывает полную стоимость программы,
+            и поэтому предусматривается определённая доля личного участия.
+          </p>
+        </li>
+      </ol>
+    </div>
+    <div class="ask-photo-container">
+      <img class="ask-photo" src="img/ask-photo.jpg" alt="фотография"/>
+    </div>
   </section>
-  <section>
+  <section class="page reviews-container">
     <h2>Отзывы</h2>
-    <ul>
-      <li>
-        <blockquote>
-          <cite>Ольга Михайлова</cite>
-          <p><span>Программа: </span> Арт-Тель, февраль-сетнябрь 2017</p>
-          <p>Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура».
-            Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега. С первой же встречи тебе дают понять - что ты не один,
-            у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи,
-            языковой курс а еще и поездки всей программой в разные уголки страны.</p>
-          <a>Читать подробнее</a>
+    <ul class="reviews-list">
+      <li class="review-container">
+        <img class="review-photo" src="img/review-photo1.jpg" alt="фотография клиента"/>
+        <blockquote class="review">
+          <cite class="review-name">Ольга Михайлова</cite>
+          <p class="review-program"><span class="review-program-caption">Программа: </span> Арт-Тель, февраль-сентябрь 2017</p>
+          <div class="review-annotate">
+            <p>Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура».
+            Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
+
+            <p> С первой же встречи тебе дают понять - что ты не один,
+              у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи,
+              языковой курс а еще и поездки всей программой в разные уголки страны.</p>
+          </div>
         </blockquote>
+        <a class="more-detail">Читать подробнее</a>
       </li>
+    </ul>
+    <div class="slider">
+      <p><span class="item">1</span> / <span class="review-length">6</span></p>
+      <button type="button" class="review-back"></button>
+      <button type="button" class="review-forward"></button>
+    </div>
+    <ul class="review-social-network">
+
     </ul>
   </section>
   <section>
@@ -267,5 +315,7 @@
     </li>
   </ul>
 </footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>

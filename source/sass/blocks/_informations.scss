@@ -3,12 +3,17 @@
   font-family: "Fira Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: 400;
-  background: url("../img/watercolor-bg.png") center bottom no-repeat;
-  background-size: 100% 80%;
+  background: url("../img/watercolor-bg.png") center no-repeat;
+  background-size: cover;
+  height: calc(100vw * 0.559297);
+  min-height: 764px;
 }
 
-.information,
-.record-description {
+.information-caption {
+  margin-top: -13px;
+}
+
+.information {
   margin: 24px auto auto auto;
 }
 

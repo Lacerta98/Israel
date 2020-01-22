@@ -1,46 +1,48 @@
 .conditions-container {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
   background-image: url("../img/conditions-bg.png"), url("../img/stamp.png");
   background-repeat: no-repeat;
   background-size: cover, auto;
-  background-position: center top, right center;
-  height: 100vh;
-  padding: 0 0 0 12px;
+  background-position: center, right center;
+  min-height: 942px;
+  height: calc(100vw * 0.689604);
+  padding: 77px 0 0 12px;
 }
 
 .conditions-photo {
-  flex: 1;
+  width: 581px;
+  flex-grow: 0;
   background: url("../img/conditions-photo.jpg") no-repeat center center;
   background-size: contain;
   mask: url("../img/conditions-photo-mask.png") center center / contain;
   height: 707px;
-  margin-right: 90px;
+  margin-right: 105px;
 }
 
 .conditions-container-flex {
-  flex: 1;
+  width: 552px;
+  flex-grow: 0;
   color: $black-color;
   height: 707px;
-  padding: 31px 131px 0 0;
+  padding-top: 31px;
 }
 
 .conditions-description {
-  margin: 24px 0 32px 0;
+  margin: 24px 0 40px 0;
   font-size: 15px;
   line-height: 1.7;
 }
 
-ol.conditions-list {
-  margin-top: 24px;
-  margin-bottom: 48px;
+.conditions-list {
+  margin-top: 40px;
+  padding: 0;
+  margin-bottom: 40px;
   display: block;
   counter-reset: wslist1;
   list-style: none;
 }
 
-ol.conditions-list > li {
+.conditions-list > li {
   position: relative;
   padding-left: 42px;
   padding-bottom: 39px;
@@ -71,7 +73,6 @@ ol.conditions-list > li:last-child {
 }
 
 .conditions-i {
-  margin-left: 16px;
   border-left: 4px solid $orange-color;
   padding-left: 16px;
   font-size: 15px;

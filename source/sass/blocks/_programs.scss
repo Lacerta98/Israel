@@ -1,7 +1,10 @@
 .programs-container {
-  background: url("../img/bg-program.png") right center no-repeat;
-  background-size: contain;
-  margin-top: 80px;
+  background: url("../img/bg-program.png") center no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  min-height: 534px;
+  height: calc((100vw * 0.431185) - 55px);
+  padding-top: 55px;
 }
 
 .programs {
@@ -12,15 +15,15 @@
 
 .programs-flex-container {
   display: flex;
-  margin: 52px 100px 0 0;
+  margin-top: 48px;
 }
 
 .programs-list {
   font-size: 15px;
   list-style: none;
-  flex: 55px;
+  width: 230px;
   padding: 0;
-  margin: 15px 0;
+  margin: 20px 0 0 0;
 }
 
 .program-description {
@@ -29,8 +32,9 @@
 }
 
 .program-container {
-  flex: 3;
-  padding-left: 55px;
+  width: 560px;
+  flex-grow: 0;
+  padding: 7px 0 0 65px;
 }
 
 .program-button {
@@ -68,6 +72,7 @@
 
 .program-button:focus {
   background: linear-gradient(to bottom right, $orange-color, $yellow-color);
+  text-transform: uppercase;
   color: $white-color;
   outline: none;
   clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
