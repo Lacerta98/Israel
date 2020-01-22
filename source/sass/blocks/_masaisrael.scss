@@ -1,14 +1,15 @@
 .masaisrael-container {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  background: url("../img/masa-israel-bg.png") left top no-repeat;
+  margin-top: 95px;
+  background: url("../img/masaisrael-bg.png") center no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: calc(100vw * 0.426793);
+  min-height: 583px
 }
 
 .masaisrael-content {
-  margin-right: 167px;
+  margin: 125px 167px 0 0;
   width: 403px;
   height: 160px;
   color: $white-color;

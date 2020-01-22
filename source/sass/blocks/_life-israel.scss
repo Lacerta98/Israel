@@ -1,72 +1,90 @@
 .life-israel-container {
   background: url("../img/life-bg.png") center no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: calc(100vw * 0.663982);
+  min-height: 907px;
   text-align: center;
 }
 
 .life-israel-description {
   width: 720px;
   font-size: 17px;
-  margin: 24px auto 46px auto;
+  margin: 28px auto 46px;
+  line-height: 1.7;
 }
 
 .life-israel-content {
-  display: grid;
-  grid-template-areas:
-    "first first second third third"
-    "first first fours fours fifth";
-  grid-template-rows: repeat(2, 318px);
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 30px;
-  margin: 0 113px 0 104px;
-  padding: 0;
+  display: flex;
+  margin-left: 108px;
 }
 
-.life-israel-content > li {
-  list-style: none;
+.life-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 655px;
+}
+
+.life-grid > div {
   background-repeat: no-repeat;
   background-size: contain;
   text-align: left;
+  display: flex;
+  align-items: flex-end;
 }
 
-.life-israel-content > li > h3 {
-  margin-top: 236px;
-  font-size: 21px;
-  font-family: "Raleway", "Arial", sans-serif;
-  color: $white-color;
-  margin-left: 24px;
-  margin-right: 19px;
+.life-israel-content > div > h3 {
+  margin-left: 35px;
 }
 
-.life-israel-content > li:first-child > h3 {
-  margin-top: 584px;
+.life-grid  > div > h3{
+  margin-left: 25px;
+}
+
+.life-grid  > div > h3,
+.life-israel-content > div > h3 {
   font-size: 21px;
   font-family: "Raleway", "Arial", sans-serif;
+  text-align: left;
   color: $white-color;
+  margin-bottom: 33px;
 }
 
 .life-israel-first {
-  grid-area: first;
   background-image: url("../img/1img.png");
+  width: 482px;
+  height: 732px;
+  margin: -70px 15px 0 0;
+  flex-grow: 0;
+  display: flex;
+  align-items: flex-end;
 }
 
 .life-israel-second {
-  grid-area: second;
   background-image: url("../img/2img.png");
+  width: 211px;
+  height: 318px;
+  margin: 0 30px 30px 0;
+  flex-grow: 0;
 }
 
 .life-israel-third {
-  grid-area: third;
   background-image: url("../img/3img.png");
+  width: 411px;
+  height: 318px;
+  flex-grow: 0;
 }
 
 .life-israel-fours {
-  grid-area: fours;
   background-image: url("../img/4img.png");
+  width: 411px;
+  height: 318px;
+  margin-right: 30px;
+  flex-grow: 0;
 }
 
 .life-israel-fifth {
-  grid-area: fifth;
   background-image: url("../img/5img.png");
+  width: 214px;
+  height: 318px;
+  flex-grow: 0;
 }

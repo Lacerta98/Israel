@@ -4,8 +4,9 @@
   background-repeat: no-repeat;
   background-size: cover, auto;
   background-position: center, right center;
-  min-height: 942px;
-  height: calc(100vw * 0.689604);
+  background-clip: border-box;
+  min-height: 865px;
+  height: calc((100vw * 0.689604) - 77);
   padding: 77px 0 0 12px;
 }
 
