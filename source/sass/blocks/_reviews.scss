@@ -15,7 +15,6 @@
 .review-container {
   display: flex;
   min-width: 1084px;
-  width: 100%;
   margin: 8px 0 0 98px;
   height: 480px;
 }
@@ -53,6 +52,49 @@
 
     p {
       line-height: 1.8em;
+      margin-bottom: 20px;
     }
+
+    .more-detail {
+      color: $blue-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+.reviews-footer {
+  display: flex;
+  margin: -40px 0 0 503px;
+}
+
+.slider {
+  width: 575px;
+  text-align: left;
+  font-size: 17px;
+  color: rgba(72, 72, 72, 0.5);
+
+  p {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .review-back {
+    width: 8px;
+    height: 15px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: url("../img/button-slider.svg") center no-repeat;
+    margin-right: 15px;
+  }
+
+  .review-forward {
+    width: 8px;
+    height: 15px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: url("../img/button-slider.svg") center no-repeat;
+    transform: rotate(180deg);
   }
 }

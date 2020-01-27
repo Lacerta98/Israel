@@ -1,4 +1,5 @@
-@import "blocks/constants";
+@import "colors";
+@import "fonts";
 @import "blocks/base";
 @import "blocks/informations";
 @import "blocks/programs";
@@ -8,12 +9,15 @@
 @import "blocks/masaisrael";
 @import "blocks/ask";
 @import "blocks/reviews";
+@import "blocks/details";
+@import "blocks/dialog-request";
 
 html,
 body {
   width: 100%;
   margin: 0;
   font-family: "Fira Sans", "Arial", sans-serif;
+  overflow-x: hidden;
 }
 
 .visually-hidden {
@@ -36,6 +40,14 @@ body {
   font-weight: bold;
 }
 
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: calc(100% - 250px);
+}
+
 .text-promo {
   font-size: 24px;
   color: $white-color;
@@ -50,7 +62,7 @@ input {
   font-size: 17px;
 }
 
-#phone,
+.form-text,
 .see-photo {
   padding: 0 0 0 40px;
   border: none;
@@ -60,7 +72,7 @@ input {
   vertical-align: middle;
 }
 
-input[type="submit"],
+.form-submit,
 .see-photo {
   width: 216px;
   height: 59px;
@@ -70,12 +82,12 @@ input[type="submit"],
   color: $white-color;
 }
 
-input[type="submit"]:hover,
+.form-submit:hover,
 .see-photo:hover {
   background: $yellow-color;
 }
 
-input[type="submit"]:active,
+.form-submit:active,
 .see-photo:active {
   background: $yellow-color;
   box-shadow: inset 2px 2px 5px $orange-color;
@@ -151,3 +163,35 @@ nav div {
   font-size: 15px;
   color: $black-color;
 }
+
+.social-network {
+  list-style: none;
+  display: flex;
+  padding: 0;
+
+  a {
+    margin-right: 15px;
+  }
+}
+
+.main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(72, 72, 72, 0.2);
+  height: 72px;
+  padding-left: 110px;
+}
+
+.copyright {
+  margin-left: 383px;
+  color: $black-color;
+  opacity: 0.5;
+  font-size: 12px;
+  margin-right: 353px;
+}
+
+.caption {
+  color: $blue-color;
+}
+

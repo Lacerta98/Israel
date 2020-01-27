@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
+
 <header class="page main-header">
   <h1 class="visually-hidden">Проект Израиль</h1>
   <nav>
@@ -18,9 +19,10 @@
       <a><img src="img/logo.svg" class="header-logo" alt="Israel Journey"></a>
     </div>
     <div class="button-callOrder-container">
-      <a class="button-callOrder">Заказать звонок</a>
+      <a href="#dialog-request-call" class="button-callOrder">Заказать звонок</a>
     </div>
   </nav>
+  <div class="promo">
   <p class="text-promo">Учёба, путешествие и карьера <br> для европейской молодёжи</p>
   <svg class="scroll-mouse" width="76" height="132" viewBox="0 0 76 132" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <path d="M38 76V131.5" stroke="white"></path>
@@ -34,6 +36,7 @@
       <image id="image0" width="17" height="26" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAaCAYAAABRqrc5AAABzklEQVQ4jd2VO2hUQRSGv70bg0QNwoIoBEQDQdLEQiEpbEWIhZBCCystFFuxSKNgI1gK1mIjWBgUgphCfFWCjURiBLVTgyTE1Rif2c9iZ8nJbLKulvnhcM/zZ+bOnf+WVDL0AEeAYaAP6AYWgDfABDCW/GWo0Y6rL2yNt+rpOBcJzqm/QvOsOqFeV++qMxnZpZzkmPozFRfVy+rObJXb1QtqNRCdaZBsU6dSckE9lQ3ndlSdT/3v1F7Uk4H5ajbQp55V92b5i2FmFPVmCr6o/aGxrN5KtQdqV7a1xjt6WAC96aBeA9Ph4DYCleR3J2tgBnie/F0FsCkFc0Atnn6Ia1kNYDY9u4qQLLKmElAOtdXqAOaFiB/AfPK/Ap/XauxoQfIbGAWeAI+Axf8hAXiZrCVabadtrEOSJlVqEyu+k08p2AF0/gNJT3pWC2AyBbuBwTYJ9gADyZ9CPazW0o0cVzv+oieo14IUnEDdot4LySvq5jWGy+p5l2X0mVppFPepHwLRfXXEuuptUCvqsHo7rLqqHjQT6kMZ0ZL6UX2lvneliM9Z1+UmtUcdUG+o31wdS+oddSjOlWz+eZWB/cABoB/YSv0GTwOPgafA9zjwB58rtSzklNU8AAAAAElFTkSuQmCC"></image>
     </defs>
   </svg>
+  </div>
 </header>
 
 <main>
@@ -143,8 +146,8 @@
       <form>
         <label for="phone">Телефон</label>
         <div class="record-form">
-          <input type="text" id="phone" name="phone" placeholder="Телефон">
-          <input type="submit" value="Позвоните мне">
+          <input class="form-text" type="text" id="phone" name="phone" placeholder="Телефон">
+          <input class="form-submit" type="submit" value="Позвоните мне">
         </div>
       </form>
     </div>
@@ -173,20 +176,20 @@
     <p class="life-israel-description">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
     <div class="life-israel-content">
       <div class="life-israel-first">
-        <h3>Экскурсии по Израилю <br> и знакомство с его историей</h3>
+        <h3 class="life-paragraph-caption">Экскурсии по Израилю <br> и знакомство с его историей</h3>
       </div>
       <div class="life-grid">
-        <div class="life-israel-second">
-          <h3>Изучение <br> иврита</h3>
+        <div class="life-paragraph life-israel-second">
+          <h3 class="life-paragraph-caption">Изучение <br> иврита</h3>
         </div>
-        <div class="life-israel-third">
-          <h3>Обучение современным <br> навыкам и профессиям</h3>
+        <div class="life-paragraph life-israel-third">
+          <h3 class="life-paragraph-caption">Обучение современным <br> навыкам и профессиям</h3>
         </div>
-        <div class="life-israel-fours">
-          <h3>Современные творческие проекты <br> с израильской молодёжью</h3>
+        <div class="life-paragraph life-israel-fours">
+          <h3 class="life-paragraph-caption">Современные творческие проекты <br> с израильской молодёжью</h3>
         </div>
-        <div class="life-israel-fifth">
-          <h3>Развитие <br> лидерства</h3>
+        <div class="life-paragraph life-israel-fifth">
+          <h3 class="life-paragraph-caption">Развитие <br> лидерства</h3>
         </div>
       </div>
     </div>
@@ -270,10 +273,10 @@
   <section class="page reviews-container">
     <h2>Отзывы</h2>
     <ul class="reviews-list">
-      <li class="review-container">
+      <li class="review-container visually-hidden">
         <img class="review-photo" src="img/review-photo1.jpg" alt="фотография клиента">
         <blockquote class="review">
-          <cite class="review-name">Ольга Михайлова</cite>
+          <cite class="review-name">Екатерина Михайлова</cite>
           <p class="review-program"><span class="review-program-caption">Программа: </span> Арт-Тель, февраль-сентябрь 2017</p>
           <div class="review-annotate">
             <p>Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура».
@@ -282,41 +285,150 @@
             <p> С первой же встречи тебе дают понять - что ты не один,
               у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи,
               языковой курс а еще и поездки всей программой в разные уголки страны.</p>
+            <a class="more-detail">Читать подробнее</a>
           </div>
         </blockquote>
-        <a class="more-detail">Читать подробнее</a>
+      </li>
+      <li class="review-container">
+        <img class="review-photo" src="img/review-photo1.jpg" alt="фотография клиента">
+        <blockquote class="review">
+          <cite class="review-name">Ольга Михайлова</cite>
+          <p class="review-program"><span class="review-program-caption">Программа: </span> Арт-Тель, февраль-сентябрь 2017</p>
+          <div class="review-annotate">
+            <p>Долго выбирая программу, на которую ехать - я определилась, взяла на 5 месяцев «иврит как культура».
+              Мне очень повезло оказаться в надежных и заботливых руках Анны, Юлии и Олега.</p>
+
+            <p> С первой же встречи тебе дают понять - что ты не один,
+              у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи,
+              языковой курс а еще и поездки всей программой в разные уголки страны.</p>
+            <a class="more-detail">Читать подробнее</a>
+          </div>
+        </blockquote>
       </li>
     </ul>
-    <div class="slider">
-      <p><span class="item">1</span> / <span class="review-length">6</span></p>
-      <button type="button" class="review-back"></button>
-      <button type="button" class="review-forward"></button>
+    <div class="reviews-footer">
+      <div class="slider">
+        <p><span class="item">2</span> / <span class="review-length">6</span></p>
+        <button type="button" class="button review-back"></button>
+        <button type="button" class="button review-forward"></button>
+      </div>
+      <ul class="social-network">
+        <li>
+          <a class="facebook" href="#"><img src="img/facebook.svg" alt="Наш Facebook"></a>
+        </li>
+        <li>
+          <a class="whatsapp" href="#"><img src="img/whatsapp.svg" alt="Наш Twitter"></a>
+        </li>
+        <li>
+          <a class="telegram" href="#"><img src="img/telegram.svg" alt="Наш Instagram"></a>
+        </li>
+      </ul>
     </div>
-    <ul class="review-social-network">
-
-    </ul>
   </section>
-  <section>
-    <h2>Узнать подробности</h2>
+  <section class="page details-container">
+    <div class="details-flex">
+      <div>
+        <h2>Узнать подробности</h2>
+        <div class="details-information">
+          <div class="location">
+            <img src="img/marker-map.svg" width="12" height="18">
+            <span class="location-caption">Ваш город:</span>
+            <a class="city">Новосибирск</a>
+            <img src="img/gps.svg" width="16" height="15" class="gps">
+          </div>
+          <div class="curator-card">
+            <img src="img/curator-photo.png" class="curator-photo" width="112" height="112">
+            <div class="curator-information">
+              <p class="curator-name">
+                <span class="caption">Ваш куратор: </span>
+                Анна Горелик
+              </p>
+              <p class="curator-adress">
+                Новосибирск, ул. Щетинкина 68, культурный центр «Бейт Менахем»
+              </p>
+              <ul class="social-network">
+                <li>
+                  <a class="facebook" href="#"><img src="img/facebook.svg" alt="Наш Facebook"></a>
+                </li>
+                <li>
+                  <a class="twitter" href="#"><img src="img/twitter.svg" alt="Наш Twitter"></a>
+                </li>
+                <li>
+                  <a class="instagram" href="#"><img src="img/instagram.svg" alt="Наш Instagram"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="curator-description">
+            Куратор является опытным специалистом агентства Сохнут и знает о проекте «Маса» всё!
+            Свяжитесь с куратором, узнайте подробнее о программах и выберите свою !
+          </div>
+        </div>
+      </div>
+      <figure class="map">
+        <img src="img/marker-map.svg" width="18" height="28" class="marker-map">
+      </figure>
+    </div>
+    <div class="request-call">
+      <div class="call-description">
+        <p>
+          Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!
+        </p>
+        <p class="protection-rights">
+          Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от нас!
+        </p>
+      </div>
+      <form class="request-container">
+        <label for="phone">Телефон</label>
+        <div class="request-form">
+          <input class="form-text request-text" type="text" id="name" name="name" placeholder="Имя">
+          <input class="form-text request-text" type="text" id="record-phone" name="phone" placeholder="Телефон">
+          <input class="form-submit" type="submit" value="Позвоните мне">
+        </div>
+      </form>
+    </div>
   </section>
 </main>
-<footer>
+<footer class="main-footer">
   <a>
     <img src="img/logo-footer.svg" alt="Israel Journey">
   </a>
-  <p>Copyright someDesignCompany ©2019</p>
-  <ul>
+  <p class="copyright">Copyright someDesignCompany ©2019</p>
+  <ul class="social-network">
     <li>
-      <a><img src="img/facebook.svg" alt="Наш Facebook"></a>
+      <a class="facebook" href="#"><img src="img/facebook.svg" alt="Наш Facebook"></a>
     </li>
     <li>
-      <a><img src="img/twitter.svg" alt="Наш Twitter"></a>
+      <a class="twitter" href="#"><img src="img/twitter.svg" alt="Наш Twitter"></a>
     </li>
     <li>
-      <a><img src="img/instagram.svg" alt="Наш Instagram"></a>
+      <a class="instagram" href="#"><img src="img/instagram.svg" alt="Наш Instagram"></a>
     </li>
   </ul>
 </footer>
+
+<div id="dialog-request-call">
+  <form class="dialog-request-container">
+    <label for="dialog-phone">Заказать звонок</label>
+    <a href="#" class="close">
+      <img src="img/close-button.svg" width="18" height="17" alt="закрыть">
+    </a>
+    <h3 class="dialog-caption">Заказать звонок</h3>
+    <p class="dialog-information">
+      Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и
+      обязательно поможем найти ответ на ваш вопрос!
+    </p>
+    <div class="dialog-form">
+      <input class="form-text request-text" type="text" id="dialog-name" name="name" placeholder="Имя">
+      <input class="form-text request-text" type="text" id="dialog-phone" name="phone" placeholder="Телефон">
+      <input class="form-submit" type="submit" value="Перезвоните мне">
+      <div class="consent">
+        <input class="check" type="checkbox" id="dialog-check">
+        <label class="label-check" for="dialog-check">Нажимая на кнопку, вы даёте согласие на обраотку персональных данных</label>
+      </div>
+    </div>
+  </form>
+</div>
 
 <script src="js/script.js"></script>
 </body>

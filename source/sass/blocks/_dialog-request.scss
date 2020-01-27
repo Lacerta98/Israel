@@ -1,0 +1,91 @@
+#dialog-request-call {
+  display: none;
+  position: fixed;
+  min-width: 1366px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(235, 235, 235, 0.95);
+}
+
+#dialog-request-call:target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-request-container {
+  width: 480px;
+  height: 521px;
+  background-color: $white-color;
+  border-radius: 8px;
+  padding: 32px 32px 32px 48px;
+}
+
+.close {
+  margin-left: 460px;
+}
+
+.dialog-caption {
+  margin-top: 0;
+}
+
+.dialog-information {
+  width: 360px;
+  margin-bottom: 37px;
+  font-size: 15px;
+}
+
+#dialog-name {
+  width: 325px;
+  margin-bottom: 8px;
+}
+
+#dialog-phone {
+  width: 325px;
+  margin-bottom: 24px;
+}
+
+.dialog-form > .form-submit {
+  width: 252px;
+  margin-left: 108px;
+  margin-bottom: 16px;
+}
+
+.consent {
+  width: 264px;
+  margin-left: 108px;
+  font-size: 13px;
+  position: relative;
+  padding-left: 24px;
+}
+
+.check {
+  display: none;
+}
+
+.label-check {
+  display: block;
+}
+
+.label-check::after {
+  content: "";
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border: 2px solid $orange-color;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.check:checked + .label-check::after {
+  content: "\2713";
+  line-height: 16px;
+  text-align: center;
+  font-size: 16px;
+  color: $orange-color;
+}
+

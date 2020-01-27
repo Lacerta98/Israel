@@ -18,35 +18,31 @@
   margin-left: 108px;
 }
 
-.life-grid {
-  display: flex;
-  flex-wrap: wrap;
-  width: 655px;
-}
-
-.life-grid > div {
-  background-repeat: no-repeat;
-  background-size: contain;
-  text-align: left;
-  display: flex;
-  align-items: flex-end;
-}
-
-.life-israel-content > div > h3 {
+.life-paragraph-caption {
   margin-left: 35px;
-}
-
-.life-grid  > div > h3{
-  margin-left: 25px;
-}
-
-.life-grid  > div > h3,
-.life-israel-content > div > h3 {
   font-size: 21px;
   font-family: "Raleway", "Arial", sans-serif;
   text-align: left;
   color: $white-color;
   margin-bottom: 33px;
+}
+
+.life-grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 655px;
+
+  .life-paragraph {
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+
+    .life-paragraph-caption {
+      margin-left: 25px;
+    }
+  }
 }
 
 .life-israel-first {
