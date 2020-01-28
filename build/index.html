@@ -10,15 +10,15 @@
 <body>
 
 <header class="page main-header">
-  <h1 class="visually-hidden">Проект Израиль</h1>
-  <nav>
-    <div class="button-phone-container">
+  <h1 class="h1 visually-hidden">Проект Израиль</h1>
+  <nav class="navigation">
+    <div class="navigation-item button-phone-container">
       <a href="tel:+(972)26216581" class="button-phone">+ (972) 2 - 621 - 6581</a>
     </div>
-    <div>
+    <div class="navigation-item">
       <a><img src="img/logo.svg" class="header-logo" alt="Israel Journey"></a>
     </div>
-    <div class="button-callOrder-container">
+    <div class="navigation-item button-callOrder-container">
       <a href="#dialog-request-call" class="button-callOrder">Заказать звонок</a>
     </div>
   </nav>
@@ -41,7 +41,7 @@
 
 <main>
   <section class="page information-container">
-    <h2 class="information-caption">О программе</h2>
+    <h2 class="h2 information-caption">О программе</h2>
     <p class="information">«Маса» — совместный проект правительства Израиля и Еврейского агентства Сохнут.
       Более 250 учебных программ (60 на русском) и возможность стажировки в Израиле.<br>
       В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
@@ -80,7 +80,7 @@
         </div>
         <!--</div>-->
         <div class="program-container">
-          <h3>Академические</h3>
+          <h3 class="h3">Академические</h3>
           <p class="program-description">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями,
             традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира,
             это также академический центр, живая лаборатория идей и творческого исследования. </p>
@@ -143,11 +143,11 @@
       <h2>Хочу поехать!</h2>
       <p class="record-description">Оставьте свой телефон и мы свяжемся с вами, <br>
         подберём куратора и ответим на все вопросы!</p>
-      <form>
-        <label for="phone">Телефон</label>
+      <form action="#dialog-accepted">
+        <label class="hidden" for="phone">Телефон</label>
         <div class="record-form">
-          <input class="form-text" type="text" id="phone" name="phone" placeholder="Телефон">
-          <input class="form-submit" type="submit" value="Позвоните мне">
+          <input class="input form-text" type="text" id="phone" name="phone" placeholder="Телефон">
+          <input class="input form-submit" type="submit" value="Позвоните мне">
         </div>
       </form>
     </div>
@@ -176,20 +176,20 @@
     <p class="life-israel-description">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
     <div class="life-israel-content">
       <div class="life-israel-first">
-        <h3 class="life-paragraph-caption">Экскурсии по Израилю <br> и знакомство с его историей</h3>
+        <h3 class="h3 life-paragraph-caption">Экскурсии по Израилю <br> и знакомство с его историей</h3>
       </div>
       <div class="life-grid">
         <div class="life-paragraph life-israel-second">
-          <h3 class="life-paragraph-caption">Изучение <br> иврита</h3>
+          <h3 class="h3 life-paragraph-caption">Изучение <br> иврита</h3>
         </div>
         <div class="life-paragraph life-israel-third">
-          <h3 class="life-paragraph-caption">Обучение современным <br> навыкам и профессиям</h3>
+          <h3 class="h3 life-paragraph-caption">Обучение современным <br> навыкам и профессиям</h3>
         </div>
         <div class="life-paragraph life-israel-fours">
-          <h3 class="life-paragraph-caption">Современные творческие проекты <br> с израильской молодёжью</h3>
+          <h3 class="h3 life-paragraph-caption">Современные творческие проекты <br> с израильской молодёжью</h3>
         </div>
         <div class="life-paragraph life-israel-fifth">
-          <h3 class="life-paragraph-caption">Развитие <br> лидерства</h3>
+          <h3 class="h3 life-paragraph-caption">Развитие <br> лидерства</h3>
         </div>
       </div>
     </div>
@@ -378,12 +378,12 @@
           Мы не передаём данные третьим лицам. Ваши данные будут в безопасности и вам не придёт спам от нас!
         </p>
       </div>
-      <form class="request-container">
-        <label for="phone">Телефон</label>
+      <form class="request-container" action="#dialog-accepted">
+        <label class="hidden" for="phone">Телефон</label>
         <div class="request-form">
-          <input class="form-text request-text" type="text" id="name" name="name" placeholder="Имя">
-          <input class="form-text request-text" type="text" id="record-phone" name="phone" placeholder="Телефон">
-          <input class="form-submit" type="submit" value="Позвоните мне">
+          <input class="input form-text request-text" type="text" id="name" name="name" placeholder="Имя">
+          <input class="input form-text request-text" type="text" id="record-phone" name="phone" placeholder="Телефон">
+          <input class="input form-submit" type="submit" value="Позвоните мне">
         </div>
       </form>
     </div>
@@ -407,27 +407,41 @@
   </ul>
 </footer>
 
-<div id="dialog-request-call">
-  <form class="dialog-request-container">
-    <label for="dialog-phone">Заказать звонок</label>
+<div id="dialog-request-call" class="dialog dialog-request-call">
+  <form class="dialog-container" action="#dialog-accepted">
+    <label class="hidden" for="dialog-phone">Заказать звонок</label>
     <a href="#" class="close">
       <img src="img/close-button.svg" width="18" height="17" alt="закрыть">
     </a>
-    <h3 class="dialog-caption">Заказать звонок</h3>
+    <h3 class="h3 dialog-caption">Заказать звонок</h3>
     <p class="dialog-information">
       Оставьте ваши контактные данные, мы свяжемся с вами в течение рабочего дня и
       обязательно поможем найти ответ на ваш вопрос!
     </p>
     <div class="dialog-form">
-      <input class="form-text request-text" type="text" id="dialog-name" name="name" placeholder="Имя">
-      <input class="form-text request-text" type="text" id="dialog-phone" name="phone" placeholder="Телефон">
-      <input class="form-submit" type="submit" value="Перезвоните мне">
+      <input class="input form-text request-text dialog-text" type="text" id="dialog-name" name="name" placeholder="Имя">
+      <input class="input form-text request-text dialog-text" type="text" id="dialog-phone" name="phone" placeholder="Телефон">
+      <input class="input form-submit dialog-submit" type="submit" value="Перезвоните мне">
       <div class="consent">
-        <input class="check" type="checkbox" id="dialog-check">
+        <input class="input check" type="checkbox" id="dialog-check">
         <label class="label-check" for="dialog-check">Нажимая на кнопку, вы даёте согласие на обраотку персональных данных</label>
       </div>
     </div>
   </form>
+</div>
+
+<div id="dialog-accepted" class="dialog dialog-accepted">
+  <div class="dialog-container">
+    <a href="#" class="close">
+      <img src="img/close-button.svg" width="18" height="17" alt="закрыть">
+    </a>
+    <img src="img/ok_check.svg" class="ok-icon" width="71" height="64" alt="ok">
+    <h3 class="h3 dialog-caption accepted-caption">Заявка принята</h3>
+    <p class="dialog-information accepted-information">
+      Мы приняли ваши данные и вскоре мы перезвоним вам для уточнения деталей!
+    </p>
+    <a href="#" class="form-submit accepted-submit">Понятно</a>
+  </div>
 </div>
 
 <script src="js/script.js"></script>

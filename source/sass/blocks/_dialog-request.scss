@@ -1,4 +1,4 @@
-#dialog-request-call {
+.dialog {
   display: none;
   position: fixed;
   min-width: 1366px;
@@ -9,22 +9,23 @@
   background-color: rgba(235, 235, 235, 0.95);
 }
 
-#dialog-request-call:target {
+.dialog-request-call:target,
+.dialog-accepted:target {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.dialog-request-container {
-  width: 480px;
-  height: 521px;
+.dialog-container {
+  width: 400px;
+  height: 457px;
   background-color: $white-color;
   border-radius: 8px;
   padding: 32px 32px 32px 48px;
 }
 
 .close {
-  margin-left: 460px;
+  margin-left: 382px;
 }
 
 .dialog-caption {
@@ -37,20 +38,14 @@
   font-size: 15px;
 }
 
-#dialog-name {
+.form-text.dialog-text {
   width: 325px;
   margin-bottom: 8px;
 }
 
-#dialog-phone {
-  width: 325px;
-  margin-bottom: 24px;
-}
-
-.dialog-form > .form-submit {
+.form-submit.dialog-submit {
   width: 252px;
-  margin-left: 108px;
-  margin-bottom: 16px;
+  margin: 16px 0 16px 108px;
 }
 
 .consent {
@@ -89,3 +84,25 @@
   color: $orange-color;
 }
 
+.ok-icon {
+  margin: 65px 0 30px calc((100% - 71px) / 2);
+}
+
+.accepted-caption {
+  margin-left: 75px;
+}
+
+.dialog-information.accepted-information {
+  margin-left: 50px;
+}
+
+.form-submit.accepted-submit {
+  width: 264px;
+  height: 42px;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 17px;
+  margin-left: 60px;
+}
