@@ -1,6 +1,6 @@
-.record-container {
+.record {
   background-image: url("../img/backpack.png"), url("../img/girl-flag-bg.png");
-  background-position: left bottom, center;
+  background-position: left 135px, center;
   background-repeat: no-repeat;
   background-size: 147px 262px, cover;
   min-height: 679px;
@@ -8,21 +8,22 @@
   border: 1px solid rgba(0, 0, 0, 0);
 }
 
-.record-container-center {
+.record__container {
   width: 477px;
   height: 254px;
   margin: 209px auto auto 210px;
 }
 
-.record-description {
+.record__description {
   margin-top: 29px;
-  line-height: 1.8em;
+  opacity: 0.87;
+  line-height: 29px;
 }
 
-.record-form {
+.record__form {
   border-radius: 80px;
   width: 477px;
   height: 59px;
   border: 1px solid #e3e3e3;
-  margin-top: 64px;
+  margin-top: 60px;
 }

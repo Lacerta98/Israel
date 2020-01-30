@@ -4,7 +4,16 @@
   font-weight: 700;
   src:
     local("Fira Sans Bold"),
-    url("../fonts/Fira_Sans_Bold.woff") format("woff");
+    url("../fonts/FiraSans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local("Fira Sans Medium"),
+    url("../fonts/FiraSans-Medium.woff") format("woff");
 }
 
 @font-face {

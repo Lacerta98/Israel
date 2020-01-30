@@ -1,4 +1,4 @@
-.programs-container {
+.programs {
   background: url("../img/bg-program.png") center no-repeat;
   background-size: cover;
   background-clip: border-box;
@@ -7,98 +7,21 @@
   padding-top: 55px;
 }
 
-.programs {
+.programs__container {
   padding-top: 48px;
   width: 945px;
   margin: auto;
 }
 
-.programs-flex-container {
-  display: flex;
-  margin-top: 48px;
-}
-
-.programs-list {
+.programs__list {
   font-size: 15px;
   list-style: none;
   width: 230px;
   padding: 0;
-  margin: 20px 0 0 0;
+  margin: 68px 0 0 0;
 }
 
-.program-description {
-  line-height: 1.5em;
-  letter-spacing: -0.03em;
-}
-
-.program-container {
-  width: 560px;
-  flex-grow: 0;
-  padding: 7px 0 0 65px;
-}
-
-.program-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70px;
-}
-
-.program-button:hover {
-  background: linear-gradient(to bottom right, $orange-color, $yellow-color);
-  background-clip: text;
-  color: transparent;
-}
-
-.program-button:hover > .program-icon-culture {
-  background-image: url("../img/culture-hover.svg");
-}
-
-.program-button:hover > .program-icon-business {
-  background-image: url("../img/busines-hover.svg");
-}
-
-.program-button:hover > .program-icon-volonteur {
-  background-image: url("../img/valenturs-hover.svg");
-}
-
-.program-button:hover > .program-icon-religion {
-  background-image: url("../img/religion-hover.svg");
-}
-
-.program-button:hover > .program-icon-study {
-  background-image: url("../img/study-hover.svg");
-}
-
-.program-button:focus {
-  background: linear-gradient(to bottom right, $orange-color, $yellow-color);
-  text-transform: uppercase;
-  color: $white-color;
-  outline: none;
-  clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
-}
-
-.program-button:focus > .program-icon-study {
-  background-image: url("../img/study-focus.svg");
-}
-
-.program-button:focus > .program-icon-religion {
-  background-image: url("../img/relidion-focus.svg");
-}
-
-.program-button:focus > .program-icon-business {
-  background-image: url("../img/busines-focus.svg");
-}
-
-.program-button:focus > .program-icon-culture {
-  background-image: url("../img/culture-focus.svg");
-}
-
-.program-button:focus > .program-icon-volonteur {
-  background-image: url("../img/volonteur-focus.svg");
-}
-
-.program-icon {
+.program__icon {
   background-position: center;
   background-repeat: no-repeat;
   width: 36px;
@@ -106,26 +29,100 @@
   flex: 1;
 }
 
-.program-title {
+.button__program {
+  height: 70px;
+
+  .program__icon_culture {
+    background-image: url("../img/culture-default.svg");
+  }
+
+  .program__icon_study {
+    background-image: url("../img/study-default.svg");
+  }
+
+  .program__icon_business {
+    background-image: url("../img/busines-default.svg");
+  }
+
+  .program__icon_volonteur {
+    background-image: url("../img/voloneur-default.svg");
+  }
+
+  .program__icon_religion {
+    background-image: url("../img/religion-default.svg");
+  }
+}
+
+.button__program:hover {
+  color: $orange-color;
+  opacity: 1;
+
+  .program__icon_culture {
+    background-image: url("../img/culture-hover.svg");
+  }
+
+  .program__icon_business {
+    background-image: url("../img/busines-hover.svg");
+  }
+
+  .program__icon_volonteur {
+    background-image: url("../img/valenturs-hover.svg");
+  }
+
+  .program__icon_religion {
+    background-image: url("../img/religion-hover.svg");
+  }
+
+  .program__icon_study {
+    background-image: url("../img/study-hover.svg");
+  }
+}
+
+.button__program:focus {
+  background: linear-gradient(to bottom right, $orange-color, $yellow-color);
+  text-transform: lowercase;
+  font-weight: 500;
+  font-size: 16px;
+  font-variant: small-caps;
+  color: $white-color;
+  opacity: 1;
+  outline: none;
+  clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+
+  .program__icon_study {
+    background-image: url("../img/study-focus.svg");
+  }
+
+  .program__icon_religion {
+    background-image: url("../img/relidion-focus.svg");
+  }
+
+  .program__icon_business {
+    background-image: url("../img/busines-focus.svg");
+  }
+
+  .program__icon_culture {
+    background-image: url("../img/culture-focus.svg");
+  }
+
+  .program__icon_volonteur {
+    background-image: url("../img/volonteur-focus.svg");
+  }
+}
+
+.program__title {
   flex: 2;
+  opacity: 0.87;
 }
 
-.program-icon-culture {
-  background-image: url("../img/culture-default.svg");
+.program {
+  width: 560px;
+  flex-grow: 0;
+  padding: 7px 0 0 65px;
+  margin-top: 48px;
 }
 
-.program-icon-study {
-  background-image: url("../img/study-default.svg");
-}
-
-.program-icon-business {
-  background-image: url("../img/busines-default.svg");
-}
-
-.program-icon-volonteur {
-  background-image: url("../img/voloneur-default.svg");
-}
-
-.program-icon-religion {
-  background-image: url("../img/religion-default.svg");
+.program__description {
+  opacity: 0.87;
+  line-height: 26px;
 }

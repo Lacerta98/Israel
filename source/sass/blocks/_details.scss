@@ -1,16 +1,15 @@
-.details-container {
+.details {
   background: url("../img/details-bg.png") center no-repeat;
   background-size: cover;
   min-height: 697px;
   height: calc(100vw * 0.510248);
 }
 
-.details-flex {
-  display: flex;
+.details__container {
   margin-left: 110px;
 }
 
-.details-information {
+.details__information {
   margin: 50px 55px 0 5px;
 }
 
@@ -23,20 +22,20 @@
   margin-left: 5px;
 }
 
-.curator-card {
+.curator {
   display: flex;
   margin-bottom: 15px;
 }
 
-.curator-photo {
+.curator__photo {
   margin-right: 20px;
 }
 
-.curator-name {
+.curator__name {
   margin-top: 0;
 }
 
-.curator-adress {
+.curator__adress {
   width: 220px;
   font-size: 13px;
   color: $black-color;
@@ -45,7 +44,7 @@
   margin-bottom: -5px;
 }
 
-.curator-description {
+.curator__description {
   width: 500px;
   line-height: 1.7;
   color: rgba(72, 72, 72, 0.87);
@@ -60,13 +59,13 @@
   position: relative;
 }
 
-.marker-map {
+.map__marker {
   position: absolute;
   left: 470px;
   top: 225px;
 }
 
-.request-container {
+.request-call__form {
   margin-top: 10px;
 }
 
@@ -75,7 +74,7 @@
   margin: 35px 0 0 110px;
 }
 
-.call-description {
+.request-call__description {
   width: 345px;
   line-height: 1.6;
   margin-right: 35px;
@@ -88,16 +87,11 @@
   color: rgba(72, 72, 72, 0.5);
 }
 
-.form-text.request-text {
+.input__text.request-text {
   border: 2px solid #e3e3e3;
   border-radius: 80px;
-  padding: 17px 0 17px 35px;
   width: 210px;
   margin-right: 20px;
-}
-
-.form-text.request-text::placeholder {
-  color: rgba(72, 72, 72, 0.5);
 }
 
 .city {
@@ -105,6 +99,6 @@
   border-bottom: 1px dashed $blue-color;
 }
 
-.location-caption {
+.location__caption {
   font-family: "Regular", "Arial", sans-serif;
 }

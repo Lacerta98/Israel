@@ -1,22 +1,20 @@
-.ask-container {
+.asks {
   background: url("../img/ask-bg.png") center no-repeat;
   background-clip: border-box;
   background-size: cover;
   min-height: 931px;
   height: calc((100vw * 0.739385) - 79px);
-  display: flex;
-  justify-content: center;
   padding-top: 79px;
   margin-top: 57px;
 }
 
-.ask-content {
+.asks__content {
   margin: 0 51px 0 110px;
   width: 560px;
 }
 
-.ask-photo-container,
-.ask-content {
+.ask-photo__container,
+.ask__content {
   flex: 0 0 auto;
 }
 
@@ -24,16 +22,12 @@
   mask: url("../img/mask-photo.png") center center / cover;
 }
 
-.asks-list {
+.asks__list {
   margin-top: 32px;
   width: 560px;
   padding: 0;
-  counter-reset: wslist1;
-  list-style: none;
 
   li {
-    display: flex;
-    flex-wrap: wrap;
     min-height: 71px;
     border-bottom: 1px solid rgba(72, 72, 72, 0.2);
     margin-bottom: 24px;
@@ -41,10 +35,10 @@
     .ask {
       width: 400px;
       margin: 17px 80px 26px 0;
-      line-height: 1.4em;
+      line-height: 150%;
     }
 
-    .ask-list-button {
+    .button__ask {
       width: 15px;
       height: 8px;
       background-repeat: no-repeat;
@@ -56,26 +50,26 @@
       margin-top: 25px;
     }
 
-    .ask-list-button-close {
+    .button__ask_close {
       background-image: url("../img/vector-close.svg");
     }
 
-    .ask-list-button-show {
+    .button__ask_show {
       background-image: url("../img/vector-close.svg");
       transform: rotate(180deg);
     }
 
     .answer {
-      color: rgba(72, 72, 72, 0.74);
-      font-size: 15px;
-      margin: 0 0 30px;
-      line-height: 1.4em;
+      margin-bottom: 30px;
+      line-height: 140%;
+      opacity: 0.74;
     }
   }
 
   li::before {
     color: $yellow-color;
     font-size: 28px;
+    font-weight: bold;
     content: counter(wslist1);
     counter-increment: wslist1;
     display: inline-block;

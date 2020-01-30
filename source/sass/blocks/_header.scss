@@ -1,0 +1,18 @@
+.main-header {
+  min-height: 906px;
+  height: calc(100vw * 0.66325);
+  background-image: url("../img/girl.png"), url("../img/Israel.png"), url("../img/bg.png");
+  background-size: cover, 75%, cover;
+  background-position: center, center 28%, center;
+  background-repeat: no-repeat;
+  border: 1px solid rgba(0, 0, 0, 0);
+  text-align: center;
+}
+
+.navigation {
+  margin: 32px 110px 0 110px;
+
+  .flex__item {
+    flex: 1;
+  }
+}

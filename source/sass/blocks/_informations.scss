@@ -1,4 +1,4 @@
-.information-container {
+.information {
   text-align: center;
   font-family: "Fira Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -7,31 +7,32 @@
   background-size: cover;
   height: calc(100vw * 0.559297);
   min-height: 764px;
-}
-
-.information-caption {
   margin-top: -13px;
 }
 
-.information {
-  margin: 24px auto auto auto;
-  width: 52%;
-  line-height: 1.8;
+.information__caption {
+  margin-top: -13px;
 }
 
-.information-video-container {
+.information__text {
+  margin: 24px auto auto auto;
+  width: 52%;
+  line-height: 29px;
+}
+
+.video {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
-.information-video {
+.video__img {
   mask: url("../img/mask-video.png") top left / cover;
   margin: 48px auto 68px auto;
   width: 870px;
 }
 
-.button-play {
+.button__play {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -48,10 +49,10 @@
   border: none;
 }
 
-.button-play:hover {
+.button__play:hover {
   background-image: url("../img/play-button-hover.svg");
 }
 
-.button-play:active {
+.button__play:active {
   background-image: url("../img/play-button-active.svg");
 }

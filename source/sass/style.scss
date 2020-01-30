@@ -12,6 +12,11 @@
 @import "blocks/details";
 @import "blocks/dialog-request";
 @import "blocks/heading";
+@import "blocks/flex";
+@import "blocks/text";
+@import "blocks/promo";
+@import "blocks/header";
+@import "blocks/form";
 
 html,
 body {
@@ -21,118 +26,23 @@ body {
   overflow-x: hidden;
 }
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-.main-header {
-  min-height: 906px;
-  height: calc(100vw * 0.66325);
-  background-image: url("../img/girl.png"), url("../img/Israel.png"), url("../img/bg.png");
-  background-size: cover, 75%, cover;
-  background-position: center, center 28%, center;
-  background-repeat: no-repeat;
-  border: 1px solid rgba(0, 0, 0, 0);
-  text-align: center;
-  font-weight: bold;
-}
-
-.promo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  height: calc(100% - 250px);
-}
-
-.text-promo {
-  font-size: 24px;
-  color: $white-color;
-  margin-bottom: 32px;
-  margin-top: 458px;
-  letter-spacing: -0.02em;
-}
-
-.input {
-  font-family: "Fira Sans", "Arial", sans-serif;
+.a {
   text-transform: uppercase;
-  font-size: 17px;
-}
-
-.form-text,
-.see-photo {
-  padding: 0 0 0 40px;
-  border: none;
-  outline: none;
-  appearance: none;
-  width: 216px;
-  vertical-align: middle;
-}
-
-.form-submit,
-.see-photo {
-  width: 216px;
-  height: 59px;
-  border: none;
-  border-radius: 80px;
-  background: linear-gradient(to bottom right, $orange-color, $yellow-color);
-  color: $white-color;
-}
-
-.form-submit:hover,
-.see-photo:hover {
-  background: $yellow-color;
-}
-
-.form-submit:active,
-.see-photo:active {
-  background: $yellow-color;
-  box-shadow: inset 2px 2px 5px $orange-color;
-}
-
-.see-photo {
-  width: 230px;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
+  text-decoration: none;
+  color: $black-color;
 }
 
 .see-photo > img {
   margin-right: 8px;
 }
 
-.navigation {
-  display: flex;
-  margin: 32px 110px 0 110px;
-  align-items: center;
-  text-transform: uppercase;
-  color: $black-color;
-}
-
 .navigation-item {
   flex: auto;
 }
 
-.button-callOrder-container {
-  flex: 1;
-  text-align: right;
-}
-
-.button-phone-container {
-  flex: 1;
-  text-align: left;
-}
-
 .header-logo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
 }
 
 .button-callOrder {
@@ -147,8 +57,6 @@ body {
 }
 
 .social-network {
-  list-style: none;
-  display: flex;
   padding: 0;
 
   a {

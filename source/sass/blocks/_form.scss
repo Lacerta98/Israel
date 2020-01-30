@@ -1,0 +1,39 @@
+.form__label_hidden {
+  display: none;
+}
+
+.input {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-weight: 500;
+  height: 59px;
+  text-transform: lowercase;
+  font-size: 17px;
+  font-variant: small-caps;
+}
+
+.input__text {
+  opacity: 0.5;
+  padding: 0 0 0 40px;
+  border: none;
+  outline: none;
+  appearance: none;
+  width: 216px;
+  vertical-align: middle;
+}
+
+.input__submit {
+  width: 216px;
+  border: none;
+  border-radius: 80px;
+  background: linear-gradient(to bottom right, $orange-color, $yellow-color);
+  color: $white-color;
+}
+
+.input__submit:hover {
+  background: $yellow-color;
+}
+
+.input__submit:active {
+  background: $yellow-color;
+  box-shadow: inset 2px 2px 5px $orange-color;
+}

@@ -1,6 +1,4 @@
-.masaisrael-container {
-  display: flex;
-  justify-content: flex-end;
+.masaisrael {
   margin-top: 95px;
   background: url("../img/masaisrael-bg.png") center no-repeat;
   background-size: cover;
@@ -8,15 +6,23 @@
   min-height: 583px;
 }
 
-.masaisrael-content {
+.masaisrael__content {
   margin: 125px 167px 0 0;
   width: 403px;
   height: 160px;
   color: $white-color;
 }
 
-.masaisrael-description {
-  line-height: 1.7;
-  font-size: 17px;
+.masaisrael__description {
+  line-height: 170%;
+  opacity: 0.87;
   margin: 24px 0 46px 0;
+}
+
+.input__submit.masaisrael__submit {
+  width: 230px;
+
+  img {
+    margin-right: 8px;
+  }
 }

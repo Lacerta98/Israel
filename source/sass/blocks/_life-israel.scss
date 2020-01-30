@@ -1,4 +1,4 @@
-.life-israel-container {
+.life-israel {
   background: url("../img/life-bg.png") center no-repeat;
   background-size: cover;
   height: calc(100vw * 0.663982);
@@ -6,19 +6,23 @@
   text-align: center;
 }
 
-.life-israel-description {
-  width: 720px;
-  font-size: 17px;
-  margin: 28px auto 46px;
-  line-height: 1.7;
+.life-israel__container {
+  width: 1366px;
+  margin: auto;
 }
 
-.life-israel-content {
-  display: flex;
+.life-israel__description {
+  width: 720px;
+  margin: 28px auto 46px;
+  line-height: 170%;
+  opacity: 0.87;
+}
+
+.life-israel__content {
   margin-left: 108px;
 }
 
-.h3.life-paragraph-caption {
+.paragraph__caption {
   margin-left: 35px;
   font-size: 21px;
   font-family: "Raleway", "Arial", sans-serif;
@@ -27,35 +31,29 @@
   margin-bottom: 33px;
 }
 
-.life-grid {
-  display: flex;
-  flex-wrap: wrap;
+.paragraphs {
   width: 655px;
 
-  .life-paragraph {
+  .paragraph {
     background-repeat: no-repeat;
     background-size: contain;
     text-align: left;
-    display: flex;
-    align-items: flex-end;
 
-    .life-paragraph-caption {
+    .paragraph__caption {
       margin-left: 25px;
     }
   }
 }
 
-.life-israel-first {
+.paragraph__first {
   background-image: url("../img/1img.png");
   width: 482px;
   height: 732px;
   margin: -70px 15px 0 0;
   flex-grow: 0;
-  display: flex;
-  align-items: flex-end;
 }
 
-.life-israel-second {
+.paragraph__second {
   background-image: url("../img/2img.png");
   width: 211px;
   height: 318px;
@@ -63,14 +61,14 @@
   flex-grow: 0;
 }
 
-.life-israel-third {
+.paragraph__third {
   background-image: url("../img/3img.png");
   width: 411px;
   height: 318px;
   flex-grow: 0;
 }
 
-.life-israel-fours {
+.paragraph__fours {
   background-image: url("../img/4img.png");
   width: 411px;
   height: 318px;
@@ -78,7 +76,7 @@
   flex-grow: 0;
 }
 
-.life-israel-fifth {
+.paragraph__fifth {
   background-image: url("../img/5img.png");
   width: 214px;
   height: 318px;

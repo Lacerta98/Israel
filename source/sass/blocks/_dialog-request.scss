@@ -38,12 +38,12 @@
   font-size: 15px;
 }
 
-.form-text.dialog-text {
+.input__text.dialog-text {
   width: 325px;
   margin-bottom: 8px;
 }
 
-.form-submit.dialog-submit {
+.input__submit.dialog-submit {
   width: 264px;
   margin: 16px 0 16px 60px;
 }
@@ -96,7 +96,7 @@
   margin-left: 50px;
 }
 
-.form-submit.accepted-submit {
+.input__submit.accepted-submit {
   width: 264px;
   height: 42px;
   text-decoration: none;

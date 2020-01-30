@@ -4,14 +4,14 @@ let reviewCountText = null;
 let reviewList = null;
 
 window.onload = function() {
-  const reviewsTextLength = document.getElementsByClassName('review-length')[0];
-  const askButtons = Array.from(document.getElementsByClassName('ask-list-button'));
-  const sliderButtonBack = document.getElementsByClassName('review-back')[0];
-  const sliderButtonForward = document.getElementsByClassName('review-forward')[0];
+  const reviewsTextLength = document.getElementsByClassName('items__length')[0];
+  const askButtons = Array.from(document.getElementsByClassName('button__ask'));
+  const sliderButtonBack = document.getElementsByClassName('button__back')[0];
+  const sliderButtonForward = document.getElementsByClassName('button__forward')[0];
 
-  reviewsLength = document.getElementsByClassName('review-container').length;
+  reviewsLength = document.getElementsByClassName('reviews__item').length;
   reviewCountText = document.getElementsByClassName('item')[0];
-  reviewList = document.getElementsByClassName('review-container');
+  reviewList = document.getElementsByClassName('reviews__item');
 
 
   reviewsTextLength.textContent = reviewsLength;
@@ -22,8 +22,8 @@ window.onload = function() {
 
 const showAsk = function (event) {
   const activeButton = event.currentTarget;
-  activeButton.classList.toggle('ask-list-button-close');
-  activeButton.classList.toggle('ask-list-button-show');
+  activeButton.classList.toggle('button__ask_close');
+  activeButton.classList.toggle('button__ask_show');
   activeButton.nextSibling.nextSibling.classList.toggle('hidden');
 };
 

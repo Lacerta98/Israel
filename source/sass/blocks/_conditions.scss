@@ -1,5 +1,4 @@
-.conditions-container {
-  display: flex;
+.conditions {
   background-image: url("../img/conditions-bg.png"), url("../img/stamp.png");
   background-repeat: no-repeat;
   background-size: cover, auto;
@@ -10,7 +9,7 @@
   padding: 77px 0 0 12px;
 }
 
-.conditions-photo {
+.conditions__photo {
   width: 581px;
   flex-grow: 0;
   background: url("../img/conditions-photo.jpg") no-repeat center center;
@@ -20,66 +19,77 @@
   margin-right: 105px;
 }
 
-.conditions-container-flex {
+.conditions__container {
   width: 552px;
   flex-grow: 0;
-  color: $black-color;
   height: 707px;
   padding-top: 31px;
 }
 
-.conditions-description {
-  margin: 24px 0 40px 0;
-  font-size: 15px;
-  line-height: 1.7;
+.conditions__description {
+  margin: 24px 0 35px;
+  opacity: 0.87;
+  line-height: 170%;
+  width: 490px;
 }
 
-.conditions-list {
-  margin-top: 40px;
+.conditions__description_strong {
+  font-weight: 500;
+  margin-bottom: 25px;
+}
+
+.list {
   padding: 0;
-  margin-bottom: 40px;
-  display: block;
-  counter-reset: wslist1;
   list-style: none;
+  counter-reset: wslist1;
 }
 
-.conditions-list > li {
-  position: relative;
-  padding-left: 42px;
-  padding-bottom: 39px;
-  border-left: 1px dashed rgba(72, 72, 72, 0.2);
-  height: 42px;
+.conditions__list {
+  margin-bottom: 55px;
+  display: block;
+
+  li {
+    position: relative;
+    padding: 5px 0 25px 42px;
+    border-left: 1px dashed rgba(72, 72, 72, 0.2);
+    height: 42px;
+    opacity: 0.87;
+    line-height: 140%;
+  }
+
+  li::after {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    background: $white-color;
+    border-radius: 50%;
+    color: $orange-color;
+    content: counter(wslist1);
+    counter-increment: wslist1;
+    display: inline-block;
+    height: 36px;
+    left: -19px;
+    line-height: 36px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 36px;
+    opacity: 1;
+    font-weight: 500;
+    font-size: 17px;
+  }
+
+  li:last-child {
+    padding-bottom: 0;
+    border: 0;
+  }
 }
 
-ol.conditions-list > li::after {
-  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
-  background: $white-color;
-  border-radius: 50%;
-  color: $orange-color;
-  content: counter(wslist1);
-  counter-increment: wslist1;
-  display: inline-block;
-  height: 36px;
-  left: -19px;
-  line-height: 36px;
-  position: absolute;
-  text-align: center;
-  top: 0;
-  width: 36px;
-}
-
-ol.conditions-list > li:last-child {
-  padding-bottom: 0;
-  border: 0;
-}
-
-.conditions-i {
+.conditions__i {
   border-left: 4px solid $orange-color;
   padding-left: 16px;
-  font-size: 15px;
-}
+  line-height: 140%;
 
-.conditions-i > i {
-  font-style: normal;
-  opacity: 0.5;
+  i {
+    font-style: normal;
+    opacity: 0.5;
+  }
 }
