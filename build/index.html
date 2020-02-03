@@ -16,7 +16,7 @@
       <a href="tel:+(972)26216581" class="a text_size_s text_weight_medium">+ (972) 2 - 621 - 6581</a>
     </div>
     <div class="navigation-item">
-      <a><img src="img/logo.svg" class="main-logo" alt="Israel Journey"></a>
+      <a href="#"><img src="img/logo.svg" class="main-logo" alt="логотип"></a>
     </div>
     <div class="navigation-item flex__item flex__item_position_right">
       <a href="#dialog-request-call" class="a text_size_s text_weight_medium text_underline">Заказать звонок</a>
@@ -47,7 +47,7 @@
       В течение освоения программ предусмотрен грант от 4200 до 8400$.</p>
     <div class="video">
       <img class="video__img" src="img/photo-about.jpg" alt="Видео о программе">
-      <a class="button__play"></a>
+      <a href="#" class="button__play" aria-label="Перейти к видео"></a>
     </div>
   </section>
   <section class="page programs">
@@ -55,29 +55,65 @@
       <h2 class="heading heading__h2">Программы</h2>
       <div class="flex">
         <div class="programs__list">
-          <a class="flex flex_align_center flex_justify_center button__program" tabindex="1">
+          <a href="#common" class="a flex flex_align_center flex_justify_center button__program" tabindex="1">
             <div class="program__icon program__icon_culture"></div>
             <p class="program__title">Общие</p>
           </a>
-          <a class="flex flex_align_center flex_justify_center button__program" tabindex="2">
+          <a href="#academic" class="a flex flex_align_center flex_justify_center button__program" tabindex="2">
             <div class="program__icon program__icon_study"></div>
             <p class="program__title">Академические</p>
           </a>
-          <a class="flex flex_align_center flex_justify_center button__program" tabindex="3">
+          <a href="#internship" class="a flex flex_align_center flex_justify_center button__program" tabindex="3">
             <div class="program__icon program__icon_business"></div>
             <p class="program__title">Стажировки</p>
           </a>
-          <a class="flex flex_align_center flex_justify_center button__program" tabindex="4">
+          <a href="#volonteering" class="a flex flex_align_center flex_justify_center button__program" tabindex="4">
             <div class="program__icon program__icon_volonteur"></div>
             <p class="program__title">Волонтёрство</p>
           </a>
-          <a class="flex flex_align_center flex_justify_center button__program" tabindex="5">
+          <a href="#religious" class="a flex flex_align_center flex_justify_center button__program" tabindex="5">
             <div class="program__icon program__icon_religion"></div>
             <p class="program__title">Религиозные</p>
           </a>
         </div>
-        <div class="program">
+        <div class="program hidden" id="common">
+          <h3 class="heading heading__h3">Общие</h3>
+          <p class="program__description text_size_s">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями,
+            традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира,
+            это также академический центр, живая лаборатория идей и творческого исследования. </p>
+          <p class="program__description text_size_s">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+            законодательного и делового администрирования или искусства? Здесь, в Израиле,
+            Вы сможете изучить все это в удивительной университетской среде.</p>
+        </div>
+        <div class="program hidden" id="academic">
           <h3 class="heading heading__h3">Академические</h3>
+          <p class="program__description text_size_s">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями,
+            традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира,
+            это также академический центр, живая лаборатория идей и творческого исследования. </p>
+          <p class="program__description text_size_s">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+            законодательного и делового администрирования или искусства? Здесь, в Израиле,
+            Вы сможете изучить все это в удивительной университетской среде.</p>
+        </div>
+        <div class="program hidden" id="internship">
+          <h3 class="heading heading__h3">Стажировки</h3>
+          <p class="program__description text_size_s">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями,
+            традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира,
+            это также академический центр, живая лаборатория идей и творческого исследования. </p>
+          <p class="program__description text_size_s">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+            законодательного и делового администрирования или искусства? Здесь, в Израиле,
+            Вы сможете изучить все это в удивительной университетской среде.</p>
+        </div>
+        <div class="program hidden" id="volonteering">
+          <h3 class="heading heading__h3">Волонтёрство</h3>
+          <p class="program__description text_size_s">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями,
+            традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира,
+            это также академический центр, живая лаборатория идей и творческого исследования. </p>
+          <p class="program__description text_size_s">Может быть, Вы заинтересованы в изучении социологии, мира, юриспруденции, биологии, сравнительной религии,
+            законодательного и делового администрирования или искусства? Здесь, в Израиле,
+            Вы сможете изучить все это в удивительной университетской среде.</p>
+        </div>
+        <div class="program hidden" id="religious">
+          <h3 class="heading heading__h3">Религиозные</h3>
           <p class="program__description text_size_s">Провести семестр или год за рубежом, знакомясь с различными культурами и идеями,
             традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр религиозного мира,
             это также академический центр, живая лаборатория идей и творческого исследования. </p>
@@ -195,7 +231,7 @@
     <div class="masaisrael__content">
       <h2 class="heading heading__h2">#MASAISRAEL</h2>
       <p class="masaisrael__description text_size_l">Познакомьтесь с программой от первого лица! Многие участники ведут блоги и фотодневники о жизни, учёбе и путешествиях в Израиле.</p>
-      <a>
+      <a href="#">
         <div class="input input__submit masaisrael__submit flex flex_justify_center flex_align_center">
           <img src="img/instagram-button.svg" alt="Инстаграм" width="24" height="24">
           <p>Смотреть фото</p>
@@ -209,7 +245,7 @@
       <ol class="list asks__list">
         <li class="flex flex_wrap">
           <p class="ask text_size_l">Кто организатор? Какие сроки у программы?</p>
-          <button type="button" class="button button__ask button__ask_close"></button>
+          <button aria-label="Свернуть\Развернуть" type="button" class="button button__ask button__ask_close"></button>
           <p class="hidden answer">
             Полная стоимость определяется организаторами в зависимости от направления.
             В большинстве случаев грант «Маса» не покрывает полную стоимость программы,
@@ -218,7 +254,7 @@
         </li>
         <li class="flex flex_wrap">
           <p class="ask text_size_l">Что такое грант на обучение?</p>
-          <button type="button" class="button button__ask button__ask_close"></button>
+          <button aria-label="Свернуть\Развернуть" type="button" class="button button__ask button__ask_close"></button>
           <p class="hidden answer text_size_s">
             Полная стоимость определяется организаторами в зависимости от направления.
             В большинстве случаев грант «Маса» не покрывает полную стоимость программы,
@@ -227,7 +263,7 @@
         </li>
         <li class="flex flex_wrap">
           <p class="ask text_size_l">Как определяется стоимость программы?</p>
-          <button type="button" class="button button__ask button__ask_close"></button>
+          <button aria-label="Свернуть\Развернуть" type="button" class="button button__ask button__ask_close"></button>
           <p class="hidden answer text_size_s">
             Полная стоимость определяется организаторами в зависимости от направления.
             В большинстве случаев грант «Маса» не покрывает полную стоимость программы,
@@ -236,7 +272,7 @@
         </li>
         <li class="flex flex_wrap">
           <p class="ask text_size_l">Что такое грант на обучение?</p>
-          <button type="button" class="button button__ask button__ask_close"></button>
+          <button aria-label="Свернуть\Развернуть" type="button" class="button button__ask button__ask_close"></button>
           <p class="hidden answer text_size_s">
             Полная стоимость определяется организаторами в зависимости от направления.
             В большинстве случаев грант «Маса» не покрывает полную стоимость программы,
@@ -245,7 +281,7 @@
         </li>
         <li class="flex flex_wrap">
           <p class="ask text_size_l">Признаётся ли учеба в рамках проекта для дальнейшего обучения?</p>
-          <button type="button" class="button button__ask button__ask_close"></button>
+          <button aria-label="Свернуть\Развернуть" type="button" class="button button__ask button__ask_close"></button>
           <p class="hidden answer text_size_s">
             Полная стоимость определяется организаторами в зависимости от направления.
             В большинстве случаев грант «Маса» не покрывает полную стоимость программы,
@@ -254,7 +290,7 @@
         </li>
         <li class="flex flex_wrap">
           <p class="ask text_size_l">Как выглдядит полный процесс регистрации на программу «Маса»?</p>
-          <button type="button" class="button button__ask button__ask_close"></button>
+          <button aria-label="Свернуть\Развернуть" type="button" class="button button__ask button__ask_close"></button>
           <p class="hidden answer text_size_s">
             Полная стоимость определяется организаторами в зависимости от направления.
             В большинстве случаев грант «Маса» не покрывает полную стоимость программы,
@@ -282,7 +318,7 @@
             <p> С первой же встречи тебе дают понять - что ты не один,
               у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи,
               языковой курс а еще и поездки всей программой в разные уголки страны.</p>
-            <a class="more-detail">Читать подробнее</a>
+            <a href="#" class="more-detail">Читать подробнее</a>
           </div>
         </blockquote>
       </li>
@@ -298,7 +334,7 @@
             <p> С первой же встречи тебе дают понять - что ты не один,
               у тебя есть практически круглосуточная поддержка по любым вопросам. Тебе предоставляют готовое удобное расписание, жилье, приятные встречи,
               языковой курс а еще и поездки всей программой в разные уголки страны.</p>
-            <a class="more-detail">Читать подробнее</a>
+            <a href="#" class="more-detail">Читать подробнее</a>
           </div>
         </blockquote>
       </li>
@@ -306,8 +342,8 @@
     <div class="reviews__footer flex">
       <div class="slider">
         <p><span class="item">2</span> / <span class="items__length">6</span></p>
-        <button type="button" class="button button__slider button__back"></button>
-        <button type="button" class="button button__slider button__forward"></button>
+        <button aria-label="Назад" type="button" class="button button__slider button__back"></button>
+        <button aria-label="Вперёд" type="button" class="button button__slider button__forward"></button>
       </div>
       <ul class="social-network flex list">
         <li>
@@ -328,13 +364,13 @@
         <h2 class="heading heading__h2">Узнать подробности</h2>
         <div class="details__information">
           <div class="location">
-            <img src="img/marker-map.svg" width="12" height="18">
+            <img src="img/marker-map.svg" width="12" height="18" alt="маркер">
             <span class="location__caption">Ваш город:</span>
-            <a class="city">Новосибирск</a>
-            <img src="img/gps.svg" width="16" height="15" class="gps">
+            <a href="#" class="city">Новосибирск</a>
+            <img src="img/gps.svg" width="16" height="15" class="gps" alt="gps">
           </div>
           <div class="curator">
-            <img src="img/curator-photo.png" class="curator__photo" width="112" height="112">
+            <img src="img/curator-photo.png" class="curator__photo" width="112" height="112" alt="фото куратора">
             <div class="curator__information">
               <p class="curator__name">
                 <span class="caption">Ваш куратор: </span>
@@ -363,7 +399,7 @@
         </div>
       </div>
       <figure class="map">
-        <img src="img/marker-map.svg" width="18" height="28" class="map__marker">
+        <img src="img/marker-map.svg" width="18" height="28" class="map__marker" alt="маркер">
       </figure>
     </div>
     <div class="request-call">
@@ -385,7 +421,7 @@
   </section>
 </main>
 <footer class="main-footer">
-  <a>
+  <a href="#">
     <img src="img/logo-footer.svg" alt="Israel Journey">
   </a>
   <p class="copyright">Copyright someDesignCompany ©2019</p>

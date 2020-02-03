@@ -29,6 +29,10 @@
   flex: 1;
 }
 
+.program:target {
+  display: block;
+}
+
 .button__program {
   height: 70px;
 
